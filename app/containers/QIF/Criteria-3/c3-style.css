@@ -1,12 +1,12 @@
-.criteria-container {
+.criteria3-container {
   margin: 5%;
 }
-.criteria-heading-container {
+.criteria3-heading-container {
   background-color: #02334d;
   padding: 5px;
   border-radius: 5px;
 }
-.criteria-heading-style {
+.criteria3-heading-style {
   color: #dfeff7;
   font-size: 15px;
   text-align: left;
@@ -14,10 +14,7 @@
   padding-top: 1%;
   padding-left: 3%;
 }
-.keyIndicators-container {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+.criteria3-keyIndicator-container {
   background-color: #dfeff7;
   border-style: solid;
   border-top: 0;
@@ -28,7 +25,12 @@
   padding: 5px;
   margin: 2%;
 }
-.keyIndicators-heading-style {
+.criteria3-keyIndicator-subContainer1 {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.criteria3-keyIndicator-heading-style {
   color: #02334d;
   font-size: 15px;
   text-align: left;
@@ -36,7 +38,7 @@
   padding-top: 1%;
   padding-left: 3%;
 }
-.assign-button-style {
+.criteria3-keyIndicator-assign-button-style {
   background-color: #02334d;
   color: #dfeff7;
   font-size: 15px;
