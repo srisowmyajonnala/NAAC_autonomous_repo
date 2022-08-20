@@ -1,0 +1,85 @@
+.sub-card-container{
+    border-width: 1px;
+    border-style: solid;
+    border-color: black;
+    margin:20px;
+    margin-bottom: 30px;
+    padding:10px;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);;
+}
+
+.mini-card-container-1{
+    padding:10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.label-1{
+    width:50%;
+    color:black;
+    font-weight: 600;
+}
+
+.input-1{
+    width:30%;
+    height:29px;
+    background-color: 
+    #e8e9eb;
+    border-color: grey;
+    border-style: solid;
+    margin:10px;
+    margin-left: 25px;
+}
+
+.mini-card-container-2{
+    background-color: #ccd3de;
+    display: flex;
+    flex-direction: row;
+    padding:20px;
+    border-radius: 5px;
+    margin:10px;
+}
+
+.table-1{
+    border: 1px solid white;
+    border-collapse: collapse;
+    margin-left:40px;
+}
+
+.table-headings{
+    color:black;
+    font-weight: normal;
+    height:35px;
+}
+.input-2{
+    width:40px;
+    height:25px;
+    margin:5px;
+}
+.table-2{
+    border: 1px solid black;
+    border-collapse: collapse;
+    margin:10px;
+    margin-top: 80px;
+    
+}
+.table-2-heads{
+    background-color: #8e9194;
+    text-align: left;
+    padding:8px;
+}
+.table-2-rows{
+    background-color: #c8dade;
+    padding: 10px;
+}
+.button-style{
+    padding:5px;
+    border-radius: 4px;
+    border-style: solid;
+    border-width: 1px;
+    border-color: grey;
+}
+.span-style-2{
+    color:red;
+}
