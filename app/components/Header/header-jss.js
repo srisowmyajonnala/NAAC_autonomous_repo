@@ -1,9 +1,12 @@
 import { alpha, darken } from '@material-ui/core/styles';
-import { gradientBgLight, gradientBgDark } from 'containers/Templates/appStyles-jss';
+import {
+  gradientBgLight,
+  gradientBgDark,
+} from 'containers/Templates/appStyles-jss';
 const drawerWidth = 240;
 const drawerBigWidth = 280;
 
-const styles = theme => ({
+const styles = (theme) => ({
   appBar: {
     background: 'rgba(0,0,0,0)',
     zIndex: theme.zIndex.drawer + 1,
@@ -12,8 +15,11 @@ const styles = theme => ({
       duration: theme.transitions.duration.leavingScreen,
     }),
     '& $menuButton': {
-      color: theme.palette.type === 'dark' ? theme.palette.primary.light : theme.palette.primary.main,
-      backgroundColor: 'transparent',
+      color:
+        theme.palette.type === 'dark'
+          ? theme.palette.primary.light
+          : theme.palette.primary.main,
+      backgroundColor: '#e4f1f7',
       boxShadow: 'none',
       zIndex: 10,
     },
@@ -23,7 +29,7 @@ const styles = theme => ({
       },
       '& $headerTitle': {
         left: theme.spacing(2),
-      }
+      },
     },
     '&$leftBig': {
       '& $menuButton': {
@@ -35,7 +41,7 @@ const styles = theme => ({
       },
       '& $headerTitle': {
         left: 0,
-      }
+      },
     },
     '&$right': {
       '& $menuButton': {
@@ -45,26 +51,26 @@ const styles = theme => ({
         right: theme.spacing(2),
       },
       '& > div': {
-        flexDirection: 'row-reverse'
+        flexDirection: 'row-reverse',
       },
       '& $flex': {
-        textAlign: 'left'
-      }
+        textAlign: 'left',
+      },
     },
   },
   attachedbar: {
     position: 'relative',
     '& $menuButton': {
-      margin: `0 ${theme.spacing(2)}px`
+      margin: `0 ${theme.spacing(2)}px`,
     },
     '& $wrapper': {
       [theme.breakpoints.down('lg')]: {
-        border: `1px solid ${theme.palette.divider}`
+        border: `1px solid ${theme.palette.divider}`,
       },
-    }
+    },
   },
   floatingBar: {
-    position: 'fixed'
+    position: 'fixed',
   },
   appMenu: {
     justifyContent: 'space-between',
@@ -78,15 +84,15 @@ const styles = theme => ({
     [theme.breakpoints.up('lg')]: {
       background: alpha(theme.palette.background.paper, 0.8),
     },
-    color: theme.palette.text.primary
+    color: theme.palette.text.primary,
   },
   flex: {
     flex: 1,
-    textAlign: 'right'
+    textAlign: 'right',
   },
   flexDefault: {
     flex: 1,
-    textAlign: 'right'
+    textAlign: 'right',
   },
   left: {},
   leftBig: {},
@@ -99,8 +105,8 @@ const styles = theme => ({
     '&$left': {
       '& $menuButton': {
         [theme.breakpoints.up('lg')]: {
-          marginLeft: -20
-        }
+          marginLeft: -20,
+        },
       },
       [theme.breakpoints.up('lg')]: {
         marginLeft: drawerWidth,
@@ -110,8 +116,8 @@ const styles = theme => ({
     '&$leftBig': {
       '& $menuButton': {
         [theme.breakpoints.up('lg')]: {
-          marginLeft: -20
-        }
+          marginLeft: -20,
+        },
       },
       [theme.breakpoints.up('lg')]: {
         marginLeft: drawerBigWidth,
@@ -121,8 +127,8 @@ const styles = theme => ({
     '&$right': {
       '& $menuButton': {
         [theme.breakpoints.up('lg')]: {
-          marginRight: -20
-        }
+          marginRight: -20,
+        },
       },
       [theme.breakpoints.up('lg')]: {
         marginRight: drawerWidth,
@@ -130,17 +136,23 @@ const styles = theme => ({
       },
     },
     '& $menuButton': {
-      backgroundColor: theme.palette.type === 'dark' ? theme.palette.primary.main : theme.palette.primary.light,
+      backgroundColor:
+        theme.palette.type === 'dark'
+          ? theme.palette.primary.main
+          : theme.palette.primary.light,
       boxShadow: theme.glow.medium,
     },
     '& $headerAction': {
-      marginLeft: theme.spacing(1)
+      marginLeft: theme.spacing(1),
     },
     '&$darker': {
       '& $menuButton': {
-        color: theme.palette.type === 'dark' ? theme.palette.primary.light : theme.palette.primary.main,
-      }
-    }
+        color:
+          theme.palette.type === 'dark'
+            ? theme.palette.primary.light
+            : theme.palette.primary.main,
+      },
+    },
   },
   menuButton: {},
   hide: {
@@ -171,31 +183,34 @@ const styles = theme => ({
       background: alpha(theme.palette.common.white, 0.2),
     },
     '&$dark': {
-      background: theme.palette.type === 'dark' ? theme.palette.grey[700] : alpha(theme.palette.common.white, 0.8),
+      background:
+        theme.palette.type === 'dark'
+          ? theme.palette.grey[700]
+          : alpha(theme.palette.common.white, 0.8),
       boxShadow: theme.shade.light,
       '& input': {
         color: theme.palette.grey[700],
       },
       '& input::placeholder': {
         color: theme.palette.grey[400],
-        opacity: 1 /* Firefox */
+        opacity: 1 /* Firefox */,
       },
       '& input:-ms-input-placeholder': {
         color: theme.palette.grey[400],
       },
-      '& input::-ms-input-placeholder': { /* Internet Explorer 10-11 */
-        color: theme.palette.grey[400],
-      }
+      '& input::-ms-input-placeholder': {
+        /* Internet Explorer 10-11 */ color: theme.palette.grey[400],
+      },
     },
     '& $miniInput': {
-      width: 70
+      width: 70,
     },
   },
   searchWrapper: {
     [theme.breakpoints.down('md')]: {
       flex: 1,
-      textAlign: 'right'
-    }
+      textAlign: 'right',
+    },
   },
   search: {
     width: theme.spacing(9),
@@ -206,12 +221,12 @@ const styles = theme => ({
     alignItems: 'center',
     justifyContent: 'center',
     [theme.breakpoints.down('xs')]: {
-      display: 'none'
+      display: 'none',
     },
   },
   miniInput: {
     paddingLeft: 0,
-    textIndent: '999999px'
+    textIndent: '999999px',
   },
   gradientBg: {},
   solidBg: {},
@@ -219,14 +234,20 @@ const styles = theme => ({
     backgroundAttachment: 'fixed',
     boxShadow: theme.shadows[3],
     '&$gradientBg': {
-      backgroundImage: theme.palette.type === 'dark' ? gradientBgDark(theme) : gradientBgLight(theme),
+      backgroundImage:
+        theme.palette.type === 'dark'
+          ? gradientBgDark(theme)
+          : gradientBgLight(theme),
     },
     '&$solidBg': {
-      backgroundColor: theme.palette.type === 'dark' ? darken(theme.palette.primary.main, 0.4) : theme.palette.primary.main
+      backgroundColor:
+        theme.palette.type === 'dark'
+          ? darken(theme.palette.primary.main, 0.4)
+          : theme.palette.primary.main,
     },
     '& $menuButton': {
-      color: theme.palette.common.white
-    }
+      color: theme.palette.common.white,
+    },
   },
   fixed: {
     position: 'fixed',
@@ -234,13 +255,13 @@ const styles = theme => ({
     top: 0,
     [theme.breakpoints.up('lg')]: {
       top: theme.spacing(1) * -8,
-    }
+    },
   },
   separatorV: {
     borderLeft: `1px solid ${theme.palette.grey[300]}`,
     height: 20,
     margin: '0 10px',
-    opacity: 0.4
+    opacity: 0.4,
   },
   notifMenu: {
     '& li': {
@@ -248,39 +269,39 @@ const styles = theme => ({
       '& h3': {
         overflow: 'hidden',
         whiteSpace: 'nowrap',
-        textOverflow: 'ellipsis'
-      }
-    }
+        textOverflow: 'ellipsis',
+      },
+    },
   },
   badgeMenu: {
     '& span': {
       top: 0,
-      right: -30
-    }
+      right: -30,
+    },
   },
   textNotif: {
     '& span': {
       overflow: 'hidden',
       whiteSpace: 'nowrap',
       textOverflow: 'ellipsis',
-      display: 'block'
-    }
+      display: 'block',
+    },
   },
   notifIcon: {
     '& i': {
       width: 28,
       height: 28,
-      fontSize: 28
+      fontSize: 28,
     },
     '&$dark': {
       '& i': {
         color: theme.palette.text.primary,
-      }
+      },
     },
     '&$light': {
       '& i': {
         color: theme.palette.common.white,
-      }
+      },
     },
   },
   brand: {
@@ -298,7 +319,7 @@ const styles = theme => ({
     color: theme.palette.text.primary,
     '& img': {
       marginRight: 10,
-      width: 30
+      width: 30,
     },
   },
   mainMenu: {
@@ -309,26 +330,28 @@ const styles = theme => ({
     transition: 'padding 0.3s ease',
     '& > div': {
       display: 'flex',
-      justifyContent: 'center'
-    }
+      justifyContent: 'center',
+    },
   },
   headMenu: {
     fontSize: 12,
-    padding: `${theme.spacing(0.5)}px ${theme.spacing(1)}px ${theme.spacing(0.5)}px ${theme.spacing(2)}px`,
+    padding: `${theme.spacing(0.5)}px ${theme.spacing(1)}px ${theme.spacing(
+      0.5
+    )}px ${theme.spacing(2)}px`,
     minHeight: 'auto',
     margin: `0 ${theme.spacing(0.5)}px`,
-    lineHeight: '2em'
+    lineHeight: '2em',
   },
   opened: {
     color: theme.palette.primary.main,
     boxShadow: `inset 0 0 0 1px ${theme.palette.primary.main}`,
     '& svg': {
       fill: theme.palette.primary.main,
-    }
+    },
   },
   rightIcon: {
     marginLeft: theme.spacing(0.5),
-    opacity: 0.3
+    opacity: 0.3,
   },
   selected: {
     background: theme.palette.primary.main,
@@ -340,16 +363,16 @@ const styles = theme => ({
       fill: theme.palette.primary.light,
     },
     '& $rightIcon': {
-      opacity: 0.7
-    }
+      opacity: 0.7,
+    },
   },
   paperMenu: {
     overflow: 'auto',
-    maxHeight: 500
+    maxHeight: 500,
   },
   popperClose: {
     pointerEvents: 'none',
-    zIndex: 2
+    zIndex: 2,
   },
   title: {
     fontSize: 10,
@@ -359,12 +382,12 @@ const styles = theme => ({
     lineHeight: '28px',
     fontWeight: 'bold',
     background: theme.palette.background.paper,
-    borderRadius: theme.rounded.medium
+    borderRadius: theme.rounded.medium,
   },
   dropDownMenu: {
     minWidth: 300,
     marginTop: theme.spacing(1.5),
-    position: 'relative'
+    position: 'relative',
   },
   active: {},
   menuItem: {
@@ -373,19 +396,25 @@ const styles = theme => ({
     },
     '&$active': {
       borderLeft: `5px solid ${theme.palette.primary.main}`,
-      backgroundColor: theme.palette.type === 'dark' ? alpha(theme.palette.secondary.main, 0.24) : theme.palette.secondary.light,
+      backgroundColor:
+        theme.palette.type === 'dark'
+          ? alpha(theme.palette.secondary.main, 0.24)
+          : theme.palette.secondary.light,
       '& span': {
         color: theme.palette.primary.main,
       },
       '&:hover': {
-        backgroundColor: theme.palette.type === 'dark' ? alpha(theme.palette.secondary.main, 0.24) : theme.palette.secondary.light,
-      }
-    }
+        backgroundColor:
+          theme.palette.type === 'dark'
+            ? alpha(theme.palette.secondary.main, 0.24)
+            : theme.palette.secondary.light,
+      },
+    },
   },
   megaMenu: {
     '& $title': {
-      paddingLeft: theme.spacing(2)
-    }
+      paddingLeft: theme.spacing(2),
+    },
   },
   megaItem: {
     display: 'inline-block',
@@ -397,18 +426,24 @@ const styles = theme => ({
       fontSize: 14,
     },
     '& div': {
-      padding: 0
+      padding: 0,
     },
     '&$active': {
       border: `1px solid ${theme.palette.primary.main}`,
-      backgroundColor: theme.palette.type === 'dark' ? alpha(theme.palette.secondary.main, 0.24) : theme.palette.secondary.light,
+      backgroundColor:
+        theme.palette.type === 'dark'
+          ? alpha(theme.palette.secondary.main, 0.24)
+          : theme.palette.secondary.light,
       '& span': {
         color: theme.palette.primary.main,
       },
       '&:hover': {
-        backgroundColor: theme.palette.type === 'dark' ? alpha(theme.palette.secondary.main, 0.24) : theme.palette.secondary.light,
-      }
-    }
+        backgroundColor:
+          theme.palette.type === 'dark'
+            ? alpha(theme.palette.secondary.main, 0.24)
+            : theme.palette.secondary.light,
+      },
+    },
   },
   bigIcon: {
     display: 'block',
@@ -417,8 +452,8 @@ const styles = theme => ({
       fontSize: 100,
       color: theme.palette.primary.main,
       margin: '0 auto',
-      display: 'inherit'
-    }
+      display: 'inherit',
+    },
   },
   button: {},
   headerProperties: {
@@ -427,7 +462,7 @@ const styles = theme => ({
     display: 'flex',
     flex: 1,
     alignItems: 'center',
-    zIndex: 1
+    zIndex: 1,
   },
   fadeOut: {},
   invert: {},
@@ -441,7 +476,7 @@ const styles = theme => ({
         width: 28,
         height: 28,
         fontSize: 28,
-      }
+      },
     },
     '&$fadeOut': {
       opacity: 0,
@@ -450,9 +485,9 @@ const styles = theme => ({
       '& $button': {
         '& i': {
           color: alpha(theme.palette.text.primary, 0.5),
-        }
-      }
-    }
+        },
+      },
+    },
   },
   show: {},
   headerTitle: {
@@ -466,8 +501,8 @@ const styles = theme => ({
     opacity: 0,
     '&$show': {
       top: theme.spacing(1),
-      opacity: 0.87
-    }
+      opacity: 0.87,
+    },
   },
   swipeDrawerPaper: {
     width: drawerWidth,
@@ -476,8 +511,8 @@ const styles = theme => ({
     flex: 1,
     flexDirection: 'row-reverse',
     display: 'flex',
-    alignItems: 'center'
-  }
+    alignItems: 'center',
+  },
 });
 
 export default styles;

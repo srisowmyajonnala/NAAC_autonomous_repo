@@ -5,15 +5,18 @@ import amber from '@material-ui/core/colors/amber';
 import grey from '@material-ui/core/colors/grey';
 
 const drawerWidth = 240;
-const styles = theme => ({
+const styles = (theme) => ({
   user: {
-    justifyContent: 'center'
+    justifyContent: 'center',
   },
   drawer: {
-    width: drawerWidth
+    width: drawerWidth,
   },
   drawerPaper: {
-    position: 'relative',
+    display: 'flex',
+    flexDirection: 'column',
+    justifyContent: 'flex-end',
+    position: 'fixed',
     height: '100%',
     overflow: 'hidden',
     border: 'none',
@@ -38,37 +41,37 @@ const styles = theme => ({
       height: theme.spacing(6),
       top: 0,
       left: 0,
-      background: alpha(theme.palette.primary.main, 0.5)
-    }
+      background: alpha(theme.palette.primary.main, 0.5),
+    },
   },
   drawerPaperClose: {
     width: theme.spacing(8),
-    position: 'absolute',
+    position: 'fixed',
     overflowX: 'hidden',
-    background: theme.palette.background.paper,
+    background: 'transparent',
     transition: theme.transitions.create('width', {
       easing: theme.transitions.easing.sharp,
       duration: theme.transitions.duration.leavingScreen,
     }),
     '& $user': {
-      justifyContent: 'flex-start'
+      justifyContent: 'flex-start',
     },
     '& $bigAvatar': {
       width: 40,
       height: 40,
     },
     '& nav': {
-      display: 'none'
+      display: 'none',
     },
     '&:hover': {
       width: drawerWidth,
       boxShadow: theme.shadows[6],
       '& nav': {
-        display: 'block'
-      }
+        display: 'block',
+      },
     },
     '& $brand': {
-      display: 'none'
+      display: 'none',
     },
     '& $profile': {
       flexDirection: 'row',
@@ -76,31 +79,39 @@ const styles = theme => ({
       padding: theme.spacing(0.5),
       textAlign: 'left',
       '& button': {
-        width: 'auto'
-      }
+        width: 'auto',
+      },
     },
     '& $avatar': {
-      marginRight: theme.spacing(3)
+      marginRight: theme.spacing(3),
     },
     '& $menuContainer': {
       '&$menuContainer': {
         paddingTop: theme.spacing(10),
         paddingBottom: 0,
-      }
+      },
     },
   },
   drawerInner: {
     // Make the items inside not wrap when transitioning:
-    height: '100%',
+    height: '85%',
+    margin: 0,
     position: 'fixed',
-    backgroundColor: theme.palette.type === 'dark' ? alpha(theme.palette.background.paper, 0.75) : alpha(theme.palette.background.paper, 0.9),
+    borderRadius: 30,
+    backgroundColor:
+      theme.palette.type === 'dark'
+        ? alpha(theme.palette.background.paper, 0.75)
+        : alpha(theme.palette.background.paper, 0.9),
     boxShadow: theme.shade.light,
-    backdropFilter: 'saturate(180%) blur(20px)'
+    backdropFilter: 'saturate(180%) blur(20px)',
   },
   drawerInnerMobile: {
     // Make the items inside not wrap when transitioning:
     height: '100%',
-    backgroundColor: theme.palette.type === 'dark' ? alpha(theme.palette.background.paper, 0.75) : alpha(theme.palette.background.paper, 0.95),
+    backgroundColor:
+      theme.palette.type === 'dark'
+        ? alpha(theme.palette.background.paper, 0.75)
+        : alpha(theme.palette.background.paper, 0.95),
   },
   drawerHeader: {
     padding: '0',
@@ -114,7 +125,7 @@ const styles = theme => ({
   bigAvatar: {
     width: 80,
     height: 80,
-    boxShadow: theme.glow.light
+    boxShadow: theme.glow.light,
   },
   brandBar: {
     transition: theme.transitions.create(['width', 'margin', 'background'], {
@@ -126,7 +137,7 @@ const styles = theme => ({
         easing: theme.transitions.easing.sharp,
         duration: theme.transitions.duration.enteringScreen,
       }),
-    }
+    },
   },
   darker: {
     background: 'none',
@@ -136,13 +147,13 @@ const styles = theme => ({
     paddingBottom: theme.spacing(0.5),
     margin: `${theme.spacing(0.5)}px 0`,
     [theme.breakpoints.down('lg')]: {
-      paddingLeft: theme.spacing(3)
-    }
+      paddingLeft: theme.spacing(3),
+    },
   },
   child: {
     '& a': {
       paddingLeft: theme.spacing(6),
-    }
+    },
   },
   title: {
     fontSize: 10,
@@ -152,38 +163,47 @@ const styles = theme => ({
     display: 'block',
     color: theme.palette.secondary.main,
     lineHeight: '28px',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
   },
   dense: {
     marginLeft: -15,
     '& > $title:first-child': {
-      margin: '0'
+      margin: '0',
     },
     '& $head': {
-      paddingLeft: theme.spacing(10)
-    }
+      paddingLeft: theme.spacing(10),
+    },
   },
   active: {
-    backgroundColor: theme.palette.type === 'dark' ? alpha(theme.palette.primary.main, 0.24) : alpha(theme.palette.primary.main, 0.3),
+    backgroundColor:
+      theme.palette.type === 'dark'
+        ? alpha(theme.palette.primary.main, 0.24)
+        : alpha(theme.palette.primary.main, 0.3),
     '& $primary': {
-      color: theme.palette.type === 'dark' ? theme.palette.common.white : theme.palette.primary.dark,
+      color:
+        theme.palette.type === 'dark'
+          ? theme.palette.common.white
+          : theme.palette.primary.dark,
     },
     '& $icon': {
       color: theme.palette.primary.dark,
     },
     '&:hover, &:focus': {
-      backgroundColor: theme.palette.type === 'dark' ? alpha(theme.palette.primary.main, 0.24) : alpha(theme.palette.primary.main, 0.3),
-    }
+      backgroundColor:
+        theme.palette.type === 'dark'
+          ? alpha(theme.palette.primary.main, 0.24)
+          : alpha(theme.palette.primary.main, 0.3),
+    },
   },
   nolist: {
     listStyle: 'none',
   },
   primary: {
-    whiteSpace: 'nowrap'
+    whiteSpace: 'nowrap',
   },
   icon: {
     minWidth: theme.spacing(5),
-    fontSize: 24
+    fontSize: 24,
   },
   iconed: {},
   head: {
@@ -196,19 +216,21 @@ const styles = theme => ({
     },
     '& svg[class^="MuiSvgIcon"]': {
       left: -10,
-      position: 'relative'
+      position: 'relative',
     },
   },
   headCapital: {
-    padding: `${theme.spacing(1)}px 0 ${theme.spacing(1)}px ${theme.spacing(9)}px`,
+    padding: `${theme.spacing(1)}px 0 ${theme.spacing(1)}px ${theme.spacing(
+      9
+    )}px`,
     left: theme.spacing(1) * -2,
     position: 'relative',
     textTransform: 'uppercase',
     borderRadius: `0 ${theme.spacing(3)}px ${theme.spacing(3)}px 0`,
     margin: `${theme.spacing(1)}px`,
     '& span': {
-      fontSize: 14
-    }
+      fontSize: 14,
+    },
   },
   copyright: {
     color: theme.palette.text.secondary,
@@ -244,14 +266,14 @@ const styles = theme => ({
     position: 'relative',
     textAlign: 'center',
     '& img': {
-      width: 68
+      width: 68,
     },
     '& h3': {
       fontSize: 18,
       marginTop: theme.spacing(2),
       fontWeight: 500,
       color: theme.palette.text.primary,
-    }
+    },
   },
   profile: {
     height: 120,
@@ -271,7 +293,7 @@ const styles = theme => ({
       textOverflow: 'ellipsis',
       overflow: 'hidden',
       whiteSpace: 'nowrap',
-      width: 110
+      width: 110,
     },
     '& button': {
       fontSize: 12,
@@ -284,31 +306,31 @@ const styles = theme => ({
       padding: 0,
       minHeight: 20,
       marginTop: 4,
-    }
+    },
   },
   statusMenu: {
     '& li': {
-      width: 100
-    }
+      width: 100,
+    },
   },
   dotStatus: {
     width: theme.spacing(1),
     height: theme.spacing(1),
     display: 'inline-block',
     borderRadius: '50%',
-    marginRight: theme.spacing(0.5)
+    marginRight: theme.spacing(0.5),
   },
   online: {
-    backgroundColor: lightGreen[500]
+    backgroundColor: lightGreen[500],
   },
   bussy: {
-    backgroundColor: red[500]
+    backgroundColor: red[500],
   },
   idle: {
-    backgroundColor: amber[500]
+    backgroundColor: amber[500],
   },
   offline: {
-    backgroundColor: grey[500]
+    backgroundColor: grey[500],
   },
   rounded: {},
   landingNav: {},
@@ -321,16 +343,16 @@ const styles = theme => ({
     display: 'block',
     padding: `${theme.spacing(5)}px 0`,
     '&$withProfile': {
-      paddingTop: theme.spacing(18)
+      paddingTop: theme.spacing(18),
     },
     '&$landingNav': {
       [theme.breakpoints.up('lg')]: {
-        paddingTop: theme.spacing(5)
+        paddingTop: theme.spacing(5),
       },
       [theme.breakpoints.down('lg')]: {
         height: 'calc(100% - 164px)',
-        paddingTop: theme.spacing(5)
-      }
+        paddingTop: theme.spacing(5),
+      },
     },
     '&$rounded': {
       paddingRight: theme.spacing(1.5),
@@ -339,9 +361,9 @@ const styles = theme => ({
       },
       '& $opened': {
         '&:before': {
-          background: theme.palette.primary.main
-        }
-      }
+          background: theme.palette.primary.main,
+        },
+      },
     },
     '&::-webkit-scrollbar': {
       width: 8,
@@ -354,15 +376,15 @@ const styles = theme => ({
       '&::-webkit-scrollbar-thumb': {
         backgroundColor: 'rgba(0,0,0,0.3)',
         border: '1px solid rgba(255,255,255,0.4)',
-      }
-    }
+      },
+    },
   },
   divider: {
-    marginTop: theme.spacing(1)
+    marginTop: theme.spacing(1),
   },
   badge: {
-    height: 'auto'
-  }
+    height: 'auto',
+  },
 });
 
 export default styles;

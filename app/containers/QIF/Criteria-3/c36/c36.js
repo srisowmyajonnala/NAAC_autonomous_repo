@@ -1,8 +1,8 @@
 import React from 'react';
-import './c32-style.css';
+import './c36-style.css';
 
 // Promotion of Research and Facilities
-function Criteria32() {
+function Criteria36() {
   return (
     <div className="c31-inputFields-mainContainer">
       {/* Key Indicator: 3.1.1 */}
@@ -237,4 +237,4 @@ function Criteria32() {
   );
 }
 
-export default Criteria32;
+export default Criteria36;

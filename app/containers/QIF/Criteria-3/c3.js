@@ -1,6 +1,11 @@
 import React, { useState } from 'react';
 import Criteria31 from './c31/c31.js';
 import Criteria32 from './c32/c32.js';
+import Criteria33 from './c33/c33.js';
+import Criteria34 from './c34/c34.js';
+import Criteria35 from './c35/c35.js';
+import Criteria36 from './c36/c36.js';
+import Criteria37 from './c37/c37.js';
 import './c3-style.css';
 
 function Criteria3() {
@@ -35,10 +40,10 @@ function Criteria3() {
   }
 
   return (
-    <div className="criteria3-container">
+    <div className="c3-container">
       {/* Criteria Heading */}
-      <div className="criteria3-heading-container">
-        <h1 className="criteria3-heading-style">
+      <div className="c3-heading-container">
+        <h1 className="c3-heading-style">
           Research, Innovations and Extensions
         </h1>
       </div>
@@ -46,116 +51,73 @@ function Criteria3() {
       {/* Key Indicators List */}
 
       {/* Key Indicator: 3.1 */}
-      <div className="criteria3-keyIndicator-container">
-        <div
-          onClick={onClicking31}
-          className="criteria3-keyIndicator-subContainer1"
-        >
-          <h1 className="criteria3-keyIndicator-heading-style">
+      <div className="c3x-container">
+        <div onClick={onClicking31} className="c3x-subContainer">
+          <h1 className="c3x-heading-style">
             Promotion of Research and Facilities
           </h1>
-          <button className="criteria3-keyIndicator-assign-button-style">
-            Assign
-          </button>
+          <button className="c3x-assign-button-style">Assign</button>
         </div>
-        {screenStatus31 ? <Criteria31 /> : null}
       </div>
+      {screenStatus31 ? <Criteria31 /> : null}
 
       {/* Key Indicator: 3.2 */}
-      <div className="criteria3-keyIndicator-container">
-        <div
-          onClick={onClicking32}
-          className="criteria3-keyIndicator-subContainer1"
-        >
-          <h1 className="criteria3-keyIndicator-heading-style">
-            Promotion of Research and Facilities
+      <div className="c3x-container">
+        <div onClick={onClicking32} className="c3x-subContainer">
+          <h1 className="c3x-heading-style">
+            Resource Mobilization for Research
           </h1>
-          <button className="criteria3-keyIndicator-assign-button-style">
-            Assign
-          </button>
+          <button className="c3x-assign-button-style">Assign</button>
         </div>
-        {screenStatus32 ? <Criteria32 /> : null}
       </div>
+      {screenStatus32 ? <Criteria32 /> : null}
 
       {/* Key Indicator: 3.3 */}
-      <div className="criteria3-keyIndicator-container">
-        <div
-          onClick={onClicking33}
-          className="criteria3-keyIndicator-subContainer1"
-        >
-          <h1 className="criteria3-keyIndicator-heading-style">
-            Promotion of Research and Facilities
-          </h1>
-          <button className="criteria3-keyIndicator-assign-button-style">
-            Assign
-          </button>
+      <div className="c3x-container">
+        <div onClick={onClicking33} className="c3x-subContainer">
+          <h1 className="c3x-heading-style">Innovation Ecosystem</h1>
+          <button className="c3x-assign-button-style">Assign</button>
         </div>
-        {screenStatus33 ? <Criteria31 /> : null}
       </div>
+      {screenStatus33 ? <Criteria33 /> : null}
 
       {/* Key Indicator: 3.4 */}
-      <div className="criteria3-keyIndicator-container">
-        <div
-          onClick={onClicking34}
-          className="criteria3-keyIndicator-subContainer1"
-        >
-          <h1 className="criteria3-keyIndicator-heading-style">
-            Promotion of Research and Facilities
+      <div className="c3x-container">
+        <div onClick={onClicking34} className="c3x-subContainer">
+          <h1 className="c3x-heading-style">
+            Research Publications and Awards
           </h1>
-          <button className="criteria3-keyIndicator-assign-button-style">
-            Assign
-          </button>
+          <button className="c3x-assign-button-style">Assign</button>
         </div>
-        {screenStatus34 ? <Criteria31 /> : null}
       </div>
+      {screenStatus34 ? <Criteria34 /> : null}
 
       {/* Key Indicator: 3.5 */}
-      <div className="criteria3-keyIndicator-container">
-        <div
-          onClick={onClicking35}
-          className="criteria3-keyIndicator-subContainer1"
-        >
-          <h1 className="criteria3-keyIndicator-heading-style">
-            Promotion of Research and Facilities
-          </h1>
-          <button className="criteria3-keyIndicator-assign-button-style">
-            Assign
-          </button>
+      <div className="c3x-container">
+        <div onClick={onClicking35} className="c3x-subContainer">
+          <h1 className="c3x-heading-style">Consultancy</h1>
+          <button className="c3x-assign-button-style">Assign</button>
         </div>
-        {screenStatus35 ? <Criteria31 /> : null}
       </div>
+      {screenStatus35 ? <Criteria35 /> : null}
 
       {/* Key Indicator: 3.6 */}
-      <div className="criteria3-keyIndicator-container">
-        <div
-          onClick={onClicking36}
-          className="criteria3-keyIndicator-subContainer1"
-        >
-          <h1 className="criteria3-keyIndicator-heading-style">
-            Promotion of Research and Facilities
-          </h1>
-          <button className="criteria3-keyIndicator-assign-button-style">
-            Assign
-          </button>
+      <div className="c3x-container">
+        <div onClick={onClicking36} className="c3x-subContainer">
+          <h1 className="c3x-heading-style">Extension Activities</h1>
+          <button className="c3x-assign-button-style">Assign</button>
         </div>
-        {screenStatus36 ? <Criteria31 /> : null}
       </div>
+      {screenStatus36 ? <Criteria36 /> : null}
 
       {/* Key Indicator: 3.7 */}
-      <div className="criteria3-keyIndicator-container">
-        <div
-          onClick={onClicking37}
-          className="criteria3-keyIndicator-subContainer1"
-        >
-          <h1 className="criteria3-keyIndicator-heading-style">
-            Promotion of Research and Facilities
-          </h1>
-          <button className="criteria3-keyIndicator-assign-button-style">
-            Assign
-          </button>
+      <div className="c3x-container">
+        <div onClick={onClicking37} className="c3x-subContainer">
+          <h1 className="c3x-heading-style">Collaboration</h1>
+          <button className="c3x-assign-button-style">Assign</button>
         </div>
-        {screenStatus37 ? <Criteria31 /> : null}
       </div>
+      {screenStatus37 ? <Criteria37 /> : null}
     </div>
   );
 }

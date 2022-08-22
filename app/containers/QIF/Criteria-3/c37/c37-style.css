@@ -1,9 +1,9 @@
-.c32-inputFields-mainContainer {
+.c37-inputFields-mainContainer {
   display: flex;
   flex-direction: column;
   margin: 2%;
 }
-.c32x-eachInputField-container {
+.c37x-eachInputField-container {
   display: flex;
   flex-direction: row;
   border-color: #02334d;
@@ -13,40 +13,40 @@
   padding: 3%;
   margin: 2%;
 }
-.c32x-span-style {
+.c37x-span-style {
   font-weight: bold;
 }
-.c32xx-span-style {
+.c37xx-span-style {
   font-weight: 700;
 }
-.c32x-heading-style {
+.c37x-heading-style {
   font-size: medium;
   font-weight: 600;
   color: black;
 }
-.c32x-label-style {
+.c37x-label-style {
   font-size: 13px;
   font-weight: 600;
   color: black;
 }
-.c32x-input-style {
+.c37x-input-style {
   width: 30%;
   height: 50%;
 }
-.c32x-label-textarea-container {
+.c37x-label-textarea-container {
   display: flex;
   flex-direction: column;
   background-color: #9db4bf;
   border-radius: 30px;
   padding: 3%;
 }
-.c32x-container {
+.c37x-container {
   background-color: #9db4bf;
   border-radius: 30px;
   padding: 3%;
   padding-bottom: 2%;
 }
-.c32xx-container {
+.c37xx-container {
   border-color: #9db4bf;
   border-style: solid;
   border-radius: 30px;
@@ -54,12 +54,12 @@
   margin: 3%;
   padding: 2%;
 }
-.c32xx-Heading-style {
+.c37xx-Heading-style {
   color: black;
   font-size: 15px;
   font-weight: 600;
 }
-.c32x-textarea-style {
+.c37x-textarea-style {
   width: 60%;
   border-radius: 5px;
 }
@@ -68,27 +68,27 @@ th,
 td {
   border: 2px solid #9db4bf;
 }
-.c32x-table-style {
+.c37x-table-style {
   padding: 2%;
 }
-.c32x-verticalTable-heading1-style {
+.c37x-verticalTable-heading1-style {
   background-color: #9db4bf;
   border-right-color: white;
   width: 40%;
   color: black;
 }
-.c32x-verticalTable-heading2-style {
+.c37x-verticalTable-heading2-style {
   background-color: #9db4bf;
   border-right-color: white;
   width: 20%;
   color: black;
 }
-.c32x-verticalTable-heading3-style {
+.c37x-verticalTable-heading3-style {
   background-color: #9db4bf;
   width: 30%;
   color: black;
 }
-.c32x-horizontalTable-heading-style {
+.c37x-horizontalTable-heading-style {
   color: black;
   width: 25%;
 }

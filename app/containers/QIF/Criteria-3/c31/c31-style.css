@@ -1,9 +1,12 @@
-.criteria3-inputFields-mainContainer {
+.c31-inputFields-mainContainer {
   display: flex;
   flex-direction: column;
-  margin: 2%;
+  margin: 3%;
+  padding: 1.5%;
+  background-color: white;
+  border-radius: 10px;
 }
-.criteria3-eachInputField-container {
+.c31x-eachInputField-container {
   display: flex;
   flex-direction: row;
   border-color: #02334d;
@@ -13,36 +16,52 @@
   padding: 3%;
   margin: 2%;
 }
-.criteria3-span-style {
+.c31x-span-style {
   font-weight: bold;
 }
-.criteria3-eachInputField-description-style {
+.c31xx-span-style {
+  font-weight: 700;
+}
+.c31x-heading-style {
   font-size: medium;
   font-weight: 600;
   color: black;
-  margin-bottom: 2%;
 }
-.criteria3-eachInputField-label-style {
+.c31x-label-style {
   font-size: 13px;
   font-weight: 600;
   color: black;
 }
-.criteria3-eachInputField-input-style {
+.c31x-input-style {
   width: 30%;
   height: 50%;
 }
-.criteria3-eachInputField-label-input-container {
-  display: flex;
-  flex-direction: row;
-}
-.criteria3-eachInputField-label-textarea-container {
+.c31x-label-textarea-container {
   display: flex;
   flex-direction: column;
   background-color: #9db4bf;
   border-radius: 30px;
   padding: 3%;
 }
-.criteria3-eachInputField-textarea-style {
+.c31x-container {
+  background-color: #9db4bf;
+  border-radius: 30px;
+  padding: 3%;
+  padding-bottom: 2%;
+}
+.c31xx-container {
+  border-color: #9db4bf;
+  border-style: solid;
+  border-radius: 30px;
+  margin: 2%;
+  padding: 3%;
+}
+.c31xx-Heading-style {
+  color: black;
+  font-size: 15px;
+  font-weight: 600;
+}
+.c31x-textarea-style {
   width: 60%;
   border-radius: 5px;
 }
@@ -51,24 +70,44 @@ th,
 td {
   border: 2px solid #9db4bf;
 }
-.criteria3-table-style {
+.c31x-table-style {
   padding: 2%;
 }
-.criteria3-table-heading1-style {
+.c31x-verticalTable-heading1-style {
+  background-color: #9db4bf;
+  border-right-color: white;
   width: 40%;
   color: black;
 }
-.criteria3-table-heading2-style {
+.c31x-verticalTable-heading2-style {
+  background-color: #9db4bf;
+  border-right-color: white;
   width: 20%;
   color: black;
 }
-.criteria3-table-heading3-style {
+.c31x-verticalTable-heading3-style {
+  background-color: #9db4bf;
   width: 30%;
   color: black;
+}
+.c31x-horizontalTable-heading-style {
+  color: black;
+  width: 25%;
 }
 th {
   font-weight: bold;
 }
 td {
   font-weight: 600;
+}
+.c31x-button-container {
+  display: flex;
+  justify-content: flex-end;
+}
+.c31x-button-style {
+  background-color: #02334d;
+  color: #e4f1f7;
+  font-size: 15px;
+  border-radius: 5px;
+  margin-right: 5%;
 }
