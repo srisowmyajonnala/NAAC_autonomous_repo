@@ -4,117 +4,61 @@ import './c35-style.css';
 // Promotion of Research and Facilities
 function Criteria35() {
   return (
-    <div className="c31-inputFields-mainContainer">
-      {/* Key Indicator: 3.1.1 */}
-      <div className="c31x-eachInputField-container">
+    <div className="c35-inputFields-mainContainer">
+      {/* Key Indicator: 3.5.1 */}
+      <div className="c35x-eachInputField-container">
         <form>
-          <div className="c31x-label-textarea-container">
-            <h1 className="c31x-heading-style">
-              <span className="c31x-span-style">3.1.1: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
-            </h1>
-            <label htmlFor="3.1.1" className="c31x-label-style">
-              Write description in maximum of 500 words
-            </label>
-            <textarea
-              rows={6}
-              className="c31x-textarea-style"
-              id="3.1.1"
-            ></textarea>
-          </div>
-          <table className="c31x-table-style">
-            <tr>
-              <th className="c31x-verticalTable-heading1-style">
-                File Description
-              </th>
-              <th className="c31x-verticalTable-heading2-style">
-                File Template
-              </th>
-              <th className="c31x-verticalTable-heading3-style">
-                Documents upload
-              </th>
-            </tr>
-            <tr>
-              <td>Any additional information</td>
-              <td></td>
-              <td>
-                <input type="file" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                Minutes of the Governing Council/ Syndicate/ Board of Management
-                related to research promotion policy adoption
-              </td>
-              <td></td>
-              <td>
-                <input type="file" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                URL of Policy document on promotion of research uploaded on
-                website
-              </td>
-              <td></td>
-              <td>
-                <input type="text" />
-              </td>
-            </tr>
-          </table>
-        </form>
-      </div>
-
-      {/* Key Indicator: 3.1.2 */}
-      <div className="c31x-eachInputField-container">
-        <form>
-          <div className="c31x-container">
-            <h1 className="c31x-heading-style">
-              <span className="c31x-span-style">3.1.2: </span>
-              The institution provides seed money to its teachers for research.
+          <div className="c35x-container">
+            <h1 className="c35x-heading-style">
+              <span className="c35x-span-style">3.5.1: </span>
+             Revenue generated from consultancy and corporate training during the last five years(INR in Lakhs)
             </h1>
           </div>
-          <div className="c31xx-container">
-            <h1 className="c31xx-Heading-style">
-              <span className="c31xx-span-style">3.1.2.1: </span>
-              The amount of seed money provided by institution to its teachers
-              for research year wise during last five years (INR in lakhs)
+          <div className="c35xx-container">
+            <h1 className="c35xx-Heading-style">
+              <span className="c35xx-span-style">3.5.1.1: </span>
+              Total amount generated from consultancy and corporate training year wise n during last five years (INR in lakhs)
             </h1>
 
-            <table className="c31x-table-style">
+            <table className="c35x-table-style">
               <tr>
-                <th className="c31x-horizontalTable-heading-style">Year</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <th className="c35x-horizontalTable-heading-style">Year</th>
+                <td id="3531-t1"></td>
+                <td id="3531-t2"></td>
+                <td id="3531-t3"></td>
+                <td id="3531-t4"></td>
+                <td id="3531-t5"></td>
               </tr>
               <tr>
-                <th className="c31x-horizontalTable-heading-style">
+                <th className="c35x-horizontalTable-heading-style">
                   INR in lakhs
                 </th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="3531-t6"></td>
+                <td id="3531-t7"></td>
+                <td id="3531-t8"></td>
+                <td id="3531-t9"></td>
+                <td id="3531-t10"></td>
               </tr>
             </table>
 
-            <table className="c31x-table-style">
+            <table className="c35x-table-style">
               <tr>
-                <th className="c31x-verticalTable-heading1-style">
+                <th className="c35x-verticalTable-heading1-style">
                   File Description
                 </th>
-                <th className="c31x-verticalTable-heading2-style">
+                <th className="c35x-verticalTable-heading2-style">
                   File Template
                 </th>
-                <th className="c31x-verticalTable-heading3-style">
+                <th className="c35x-verticalTable-heading3-style">
                   Documents upload
                 </th>
+              </tr>
+              <tr>
+                <td>Audited statements of accounts indicating the revenue generated through consultancy and corporate training</td>
+                <td></td>
+                <td>
+                  <input type="file" />
+                </td>
               </tr>
               <tr>
                 <td>Any additional information</td>
@@ -124,26 +68,8 @@ function Criteria35() {
                 </td>
               </tr>
               <tr>
-                <td>Minutes of the relevant bodies of the Institution</td>
-                <td></td>
                 <td>
-                  <input type="file" />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  Budget and expenditure statements signed by the Finance
-                  Officer indicating seed money provided and utilized
-                </td>
-                <td></td>
-                <td>
-                  <input type="text" />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  List of teachers receiving grant and details of grant received
-                  (Data Template)
+               List of consultants and revenue generated by them (Data Template)
                 </td>
                 <td></td>
                 <td>
@@ -155,65 +81,67 @@ function Criteria35() {
         </form>
       </div>
 
-      {/* Key Indicator: 3.1.3 */}
-      <div className="c31x-eachInputField-container">
+      {/* Key Indicator: 3.5.2 */}
+      <div className="c35x-eachInputField-container">
         <form>
-          <div className="c31x-container">
-            <h1 className="c31x-heading-style">
-              <span className="c31x-span-style">3.1.3: </span>
-              Percentage of teachers awarded national/ international fellowship
-              for advanced studies/ research during the last five years
+          <div className="c35x-container">
+            <h1 className="c35x-heading-style">
+              <span className="c35x-span-style">3.5.2: </span>
+            Total amount spent on developing facilities, training teachers and
+            staff for undertaking consultancy during the last five years
             </h1>
           </div>
-          <div className="c31xx-container">
-            <h1 className="c31xx-Heading-style">
-              <span className="c31xx-span-style">3.1.3.1: </span>
-              The number of teachers awarded national/ international fellowship
-              for advanced studies/ research year wise during last five years
+          <div className="c35xx-container">
+            <h1 className="c35xx-Heading-style">
+              <span className="c35xx-span-style">3.5.2.1: </span>
+              TTotal amount spent on developing facilities, training teachers and
+              staff for undertaking consultancy during the last five years
             </h1>
 
-            <table className="c31x-table-style">
+            <table className="c35x-table-style">
               <tr>
-                <th className="c31x-horizontalTable-heading-style">Year</th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <th className="c35x-horizontalTable-heading-style">Year</th>
+                <td id="3521-t1"></td>
+                <td id="3521-t2"></td>
+                <td id="3521-t3"></td>
+                <td id="3521-t4"></td>
+                <td id="3521-t5"></td>
               </tr>
               <tr>
-                <th className="c31x-horizontalTable-heading-style">
-                  Number of teachers
+                <th className="c35x-horizontalTable-heading-style">
+                  INR in lakhs
                 </th>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
-                <td></td>
+                <td id="3521-t6"></td>
+                <td id="3521-t7"></td>
+                <td id="3521-t8"></td>
+                <td id="3521-t9"></td>
+                <td id="3521-t10"></td>
               </tr>
             </table>
 
-            <table className="c31x-table-style">
+            <table className="c35x-table-style">
               <tr>
-                <th className="c31x-verticalTable-heading1-style">
+                <th className="c35x-verticalTable-heading1-style">
                   File Description
                 </th>
-                <th className="c31x-verticalTable-heading2-style">
+                <th className="c35x-verticalTable-heading2-style">
                   File Template
                 </th>
-                <th className="c31x-verticalTable-heading3-style">
+                <th className="c35x-verticalTable-heading3-style">
                   Documents upload
                 </th>
               </tr>
               <tr>
-                <td>Any additional information</td>
+                <td>Audited statements of accounts indicating the
+                   expenditure incurred on developing facilities and training teachers and staff for undertaking consultancy</td>
                 <td></td>
                 <td>
                   <input type="file" />
                 </td>
               </tr>
               <tr>
-                <td>e-copies of the award letters of the teachers</td>
+                <td>List of training programmes,teachers and staff
+                   trained for undertaking consultancy </td>
                 <td></td>
                 <td>
                   <input type="file" />
@@ -221,8 +149,16 @@ function Criteria35() {
               </tr>
               <tr>
                 <td>
-                  List of teachers and their international fellowship details
-                  (Data Template)
+                Any additional information
+                </td>
+                <td></td>
+                <td>
+                  <input type="text" />
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  List of facilities and staff available for undertaking consultancy
                 </td>
                 <td></td>
                 <td>
@@ -232,6 +168,9 @@ function Criteria35() {
             </table>
           </div>
         </form>
+      </div>
+      <div className="c35x-button-container">
+        <button className="c35x-button-style">Save</button>
       </div>
     </div>
   );
