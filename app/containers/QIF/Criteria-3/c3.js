@@ -46,14 +46,15 @@ function Criteria3() {
         <h1 className="c3-heading-style">
           Research, Innovations and Extensions
         </h1>
+        <button className="cx-assign-button-style">Assign</button>
       </div>
 
       {/* Key Indicators List */}
 
       {/* Key Indicator: 3.1 */}
       <div className="c3x-container">
-        <div onClick={onClicking31} className="c3x-subContainer">
-          <h1 className="c3x-heading-style">
+        <div className="c3x-subContainer">
+          <h1 onClick={onClicking31} className="c3x-heading-style">
             Promotion of Research and Facilities
           </h1>
           <button className="c3x-assign-button-style">Assign</button>
@@ -63,8 +64,8 @@ function Criteria3() {
 
       {/* Key Indicator: 3.2 */}
       <div className="c3x-container">
-        <div onClick={onClicking32} className="c3x-subContainer">
-          <h1 className="c3x-heading-style">
+        <div className="c3x-subContainer">
+          <h1 onClick={onClicking32} className="c3x-heading-style">
             Resource Mobilization for Research
           </h1>
           <button className="c3x-assign-button-style">Assign</button>
@@ -74,8 +75,10 @@ function Criteria3() {
 
       {/* Key Indicator: 3.3 */}
       <div className="c3x-container">
-        <div onClick={onClicking33} className="c3x-subContainer">
-          <h1 className="c3x-heading-style">Innovation Ecosystem</h1>
+        <div className="c3x-subContainer">
+          <h1 onClick={onClicking33} className="c3x-heading-style">
+            Innovation Ecosystem
+          </h1>
           <button className="c3x-assign-button-style">Assign</button>
         </div>
       </div>
@@ -83,8 +86,8 @@ function Criteria3() {
 
       {/* Key Indicator: 3.4 */}
       <div className="c3x-container">
-        <div onClick={onClicking34} className="c3x-subContainer">
-          <h1 className="c3x-heading-style">
+        <div className="c3x-subContainer">
+          <h1 onClick={onClicking34} className="c3x-heading-style">
             Research Publications and Awards
           </h1>
           <button className="c3x-assign-button-style">Assign</button>
@@ -94,8 +97,10 @@ function Criteria3() {
 
       {/* Key Indicator: 3.5 */}
       <div className="c3x-container">
-        <div onClick={onClicking35} className="c3x-subContainer">
-          <h1 className="c3x-heading-style">Consultancy</h1>
+        <div className="c3x-subContainer">
+          <h1 onClick={onClicking35} className="c3x-heading-style">
+            Consultancy
+          </h1>
           <button className="c3x-assign-button-style">Assign</button>
         </div>
       </div>
@@ -103,8 +108,10 @@ function Criteria3() {
 
       {/* Key Indicator: 3.6 */}
       <div className="c3x-container">
-        <div onClick={onClicking36} className="c3x-subContainer">
-          <h1 className="c3x-heading-style">Extension Activities</h1>
+        <div className="c3x-subContainer">
+          <h1 onClick={onClicking36} className="c3x-heading-style">
+            Extension Activities
+          </h1>
           <button className="c3x-assign-button-style">Assign</button>
         </div>
       </div>
@@ -112,8 +119,10 @@ function Criteria3() {
 
       {/* Key Indicator: 3.7 */}
       <div className="c3x-container">
-        <div onClick={onClicking37} className="c3x-subContainer">
-          <h1 className="c3x-heading-style">Collaboration</h1>
+        <div className="c3x-subContainer">
+          <h1 onClick={onClicking37} className="c3x-heading-style">
+            Collaboration
+          </h1>
           <button className="c3x-assign-button-style">Assign</button>
         </div>
       </div>

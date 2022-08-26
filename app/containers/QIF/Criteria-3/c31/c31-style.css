@@ -5,10 +5,11 @@
   padding: 1.5%;
   background-color: white;
   border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .c31x-eachInputField-container {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   border-color: #02334d;
   border-style: solid;
   border-width: 2px;
@@ -33,26 +34,41 @@
   color: black;
 }
 .c31x-input-style {
-  width: 30%;
-  height: 50%;
+  width: 100%;
 }
 .c31x-label-textarea-container {
   display: flex;
   flex-direction: column;
-  background-color: #9db4bf;
-  border-radius: 30px;
+  background-color: #cce1eb;
+  border-radius: 10px;
   padding: 3%;
+}
+.c31x-docsRequired-container {
+  padding: 2%;
+  padding-bottom: 0;
+}
+.c31x-docsRequired-heading-style {
+  color: black;
+  font-size: medium;
+  font-weight: 600;
+}
+.c31x-docsRequired-listElements-style {
+  color: black;
+  font-size: small;
+  font-weight: 500;
+  list-style: circle;
 }
 .c31x-container {
-  background-color: #9db4bf;
-  border-radius: 30px;
-  padding: 3%;
-  padding-bottom: 2%;
+  background-color: #cce1eb;
+  border-radius: 10px;
+  padding: 2.5%;
+  padding-bottom: 1%;
 }
 .c31xx-container {
-  border-color: #9db4bf;
+  border-color: #cce1eb;
   border-style: solid;
-  border-radius: 30px;
+  border-width: 1px;
+  border-radius: 10px;
   margin: 2%;
   padding: 3%;
 }
@@ -74,19 +90,17 @@ td {
   padding: 2%;
 }
 .c31x-verticalTable-heading1-style {
-  background-color: #9db4bf;
-  border-right-color: white;
+  background-color: #cce1eb;
   width: 40%;
   color: black;
 }
 .c31x-verticalTable-heading2-style {
-  background-color: #9db4bf;
-  border-right-color: white;
+  background-color: #cce1eb;
   width: 20%;
   color: black;
 }
 .c31x-verticalTable-heading3-style {
-  background-color: #9db4bf;
+  background-color: #cce1eb;
   width: 30%;
   color: black;
 }
@@ -106,7 +120,7 @@ td {
 }
 .c31x-button-style {
   background-color: #02334d;
-  color: #e4f1f7;
+  color: #cce1eb;
   font-size: 15px;
   border-radius: 5px;
   margin-right: 5%;
