@@ -1,0 +1,114 @@
+.c11-inputFields-mainContainer {
+    display: flex;
+    flex-direction: column;
+    margin: 3%;
+    padding: 1.5%;
+    background-color: white;
+    border-radius: 10px;
+  }
+  .c11x-eachInputField-container {
+    display: flex;
+    flex-direction: row;
+    border-color: #02334d;
+    border-style: solid;
+    border-width: 2px;
+    border-radius: 10px;
+    padding: 3%;
+    margin: 2%;
+  }
+  .c11x-span-style {
+    font-weight: bold;
+  }
+  .c11xx-span-style {
+    font-weight: 700;
+  }
+  .c11x-heading-style {
+    font-size: medium;
+    font-weight: 600;
+    color: black;
+  }
+  .c11x-label-style {
+    font-size: 13px;
+    font-weight: 600;
+    color: black;
+  }
+  .c11x-input-style {
+    width: 30%;
+    height: 50%;
+  }
+  .c11x-label-textarea-container {
+    display: flex;
+    flex-direction: column;
+    background-color: #9db4bf;
+    border-radius: 30px;
+    padding: 3%;
+  }
+  .c11x-container {
+    background-color: #9db4bf;
+    border-radius: 30px;
+    padding: 3%;
+    padding-bottom: 2%;
+  }
+  .c11xx-container {
+    border-color: #9db4bf;
+    border-style: solid;
+    border-radius: 30px;
+    margin: 2%;
+    padding: 3%;
+  }
+  .c11xx-Heading-style {
+    color: black;
+    font-size: 15px;
+    font-weight: 600;
+  }
+  .c11x-textarea-style {
+    width: 60%;
+    border-radius: 5px;
+  }
+  table,
+  th,
+  td {
+    border: 2px solid #9db4bf;
+  }
+  .c11x-table-style {
+    padding: 2%;
+  }
+  .c11x-verticalTable-heading1-style {
+    background-color: #9db4bf;
+    border-right-color: white;
+    width: 40%;
+    color: black;
+  }
+  .c11x-verticalTable-heading2-style {
+    background-color: #9db4bf;
+    border-right-color: white;
+    width: 20%;
+    color: black;
+  }
+  .c11x-verticalTable-heading3-style {
+    background-color: #9db4bf;
+    width: 30%;
+    color: black;
+  }
+  .c11x-horizontalTable-heading-style {
+    color: black;
+    width: 25%;
+  }
+  th {
+    font-weight: bold;
+  }
+  td {
+    font-weight: 600;
+  }
+  .c11x-button-container {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .c11x-button-style {
+    background-color: #02334d;
+    color: #e4f1f7;
+    font-size: 15px;
+    border-radius: 5px;
+    margin-right: 5%;
+  }
+  

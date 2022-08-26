@@ -1,110 +1,123 @@
-import React from "react";
-import { Helmet } from "react-helmet";
-import brand from "dan-api/dummy/brand";
-import { PapperBlock, EmptyData } from "dan-components";
+import React, { useState } from 'react';
+import Criteria21 from './c21/c21.js';
+import Criteria22 from './c22/c22.js';
+import Criteria23 from './c23/c23.js';
+import Criteria24 from './c24/c24.js';
+import Criteria25 from './c25/c25.js';
+import Criteria26 from './c26/c26.js';
+import Criteria27 from './c27/c27.js';
+import './c2-style.css';
 
-import "./c2-style.css";
+function Criteria2() {
+  const [screenStatus21, setScreenStatus21] = useState(false);
+  const [screenStatus22, setScreenStatus22] = useState(false);
+  const [screenStatus23, setScreenStatus23] = useState(false);
+  const [screenStatus24, setScreenStatus24] = useState(false);
+  const [screenStatus25, setScreenStatus25] = useState(false);
+  const [screenStatus26, setScreenStatus26] = useState(false);
+  const [screenStatus27, setScreenStatus27] = useState(false);
 
-function BasicTable() {
-  const title = brand.name + " - Criteria-2";
-  const description = brand.desc;
+  function onClicking21() {
+    setScreenStatus21(!screenStatus21);
+  }
+  function onClicking22() {
+    setScreenStatus22(!screenStatus22);
+  }
+  function onClicking23() {
+    setScreenStatus23(!screenStatus23);
+  }
+  function onClicking24() {
+    setScreenStatus24(!screenStatus24);
+  }
+  function onClicking25() {
+    setScreenStatus25(!screenStatus25);
+  }
+  function onClicking26() {
+    setScreenStatus26(!screenStatus26);
+  }
+  function onClicking27() {
+    setScreenStatus27(!screenStatus27);
+  }
   return (
-    <form class="sub-card-container">
-      <div class="mini-card-container-1">
-        <label class="label-1" for="C311-1">
-          3.7.7: Grants received from Government and non-government agecies for
-          research products, endownments, Chairs in the institution during the
-          last five years (INR in Lakhs)
-        </label>
-        <input id="C311-1" class="input-1" type="text" />
-      </div>
-      <div class="mini-card-container-2">
-        <label class="label-1" for="firstTable">
-          3.1.1.1: Total Grants from Government and non-government agencies for
-          research projects, endownments, Chairs in the institution during the
-          last five years (INR in Lakhs)
-        </label>
-        <table
-          id="firstTable"
-          class="table-1"
-          cellPadding={4}
-          cellSpacing={0}
-          border={1}
-        >
-          <tbody>
-            <tr>
-              <th class="table-headings">2018-19</th>
-              <th class="table-headings">2017-18</th>
-              <th class="table-headings">2016-17</th>
-              <th class="table-headings">2015-16</th>
-              <th class="table-headings">2014-15</th>
-            </tr>
-            <tr>
-              <td>
-                <input class="input-2" type="text" />{" "}
-              </td>
-              <td>
-                <input class="input-2" type="text" />{" "}
-              </td>
-              <td>
-                <input class="input-2" type="text" />{" "}
-              </td>
-              <td>
-                <input class="input-2" type="text" />{" "}
-              </td>
-              <td>
-                <input class="input-2" type="text" />{" "}
-              </td>
-            </tr>
-          </tbody>
-        </table>
+    <div className="c2-container">
+      {/* Criteria Heading */}
+      <div className="c2-heading-container">
+        <h1 className="c2-heading-style">
+          Research, Innovations and Extensions
+        </h1>
       </div>
 
-      <table width={1000} class="table-2" border={2}>
-        <tr>
-          <th width={300} class="table-2-heads">
-            File Description
-          </th>
-          <th width={200} class="table-2-heads">
-            Template
-          </th>
-          <th width={500} class="table-2-heads">
-            Documents
-          </th>
-        </tr>
-        <tr>
-          <td class="table-2-rows">
-            List of endownments / projects with details of grants{" "}
-            <span class="span-style-2">*</span>
-          </td>
-          <td class="table-2-rows">Data Template</td>
-          <td class="table-2-rows">
-            <button class="button-style">Upload</button>
-            <i class="fa-solid fa-circle-question"></i>
-          </td>
-        </tr>
-        <tr>
-          <td class="table-2-rows">
-            e-copies of th egrant award letters for sponsered research projects
-            / endownments
-          </td>
-          <td class="table-2-rows"></td>
-          <td class="table-2-rows">
-            <button class="button-style">Upload</button>
-            <i class="fa-solid fa-circle-question"></i>
-          </td>
-        </tr>
-        <tr>
-          <td class="table-2-rows">Any additional information</td>
-          <td class="table-2-rows"></td>
-          <td class="table-2-rows">
-            <button class="button-style">Upload</button>
-            <i class="fa-solid fa-circle-question"></i>
-          </td>
-        </tr>
-      </table>
-    </form>
+      {/* Key Indicators List */}
+
+      {/* Key Indicator: 2.1 */}
+      <div className="c2x-container">
+        <div onClick={onClicking21} className="c2x-subContainer">
+          <h1 className="c2x-heading-style">
+            Promotion of Research and Facilities
+          </h1>
+          <button className="c2x-assign-button-style">Assign</button>
+        </div>
+      </div>
+      {screenStatus21 ? <Criteria21 /> : null}
+      {/* Key Indicator: 2.2 */}
+      <div className="c2x-container">
+        <div onClick={onClicking22} className="c2x-subContainer">
+          <h1 className="c2x-heading-style">
+            Resource Mobilization for Research
+          </h1>
+          <button className="c2x-assign-button-style">Assign</button>
+        </div>
+      </div>
+      {screenStatus22 ? <Criteria22 /> : null}
+
+      {/* Key Indicator: 2.3 */}
+      <div className="c2x-container">
+        <div onClick={onClicking23} className="c2x-subContainer">
+          <h1 className="c2x-heading-style">Innovation Ecosystem</h1>
+          <button className="c2x-assign-button-style">Assign</button>
+        </div>
+      </div>
+      {screenStatus23 ? <Criteria23 /> : null}
+
+      {/* Key Indicator: 2.4 */}
+      <div className="c2x-container">
+        <div onClick={onClicking24} className="c2x-subContainer">
+          <h1 className="c2x-heading-style">
+            Research Publications and Awards
+          </h1>
+          <button className="c2x-assign-button-style">Assign</button>
+        </div>
+      </div>
+      {screenStatus24 ? <Criteria24 /> : null}
+
+      {/* Key Indicator: 2.5 */}
+      <div className="c2x-container">
+        <div onClick={onClicking25} className="c2x-subContainer">
+          <h1 className="c2x-heading-style">Innovation Ecosystem</h1>
+          <button className="c2x-assign-button-style">Assign</button>
+        </div>
+      </div>
+      {screenStatus25 ? <Criteria25 /> : null}
+
+      {/* Key Indicator: 2.6 */}
+      <div className="c2x-container">
+        <div onClick={onClicking26} className="c2x-subContainer">
+          <h1 className="c2x-heading-style">Innovation Ecosystem</h1>
+          <button className="c2x-assign-button-style">Assign</button>
+        </div>
+      </div>
+      {screenStatus26 ? <Criteria26 /> : null}
+
+      {/* Key Indicator: 2.7 */}
+      <div className="c2x-container">
+        <div onClick={onClicking27} className="c2x-subContainer">
+          <h1 className="c2x-heading-style">Innovation Ecosystem</h1>
+          <button className="c2x-assign-button-style">Assign</button>
+        </div>
+      </div>
+      {screenStatus27 ? <Criteria27 /> : null}
+    </div>
   );
 }
 
-export default BasicTable;
+export default Criteria2;
