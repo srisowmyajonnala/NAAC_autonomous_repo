@@ -7,8 +7,10 @@ import Criteria35 from './c35/c35.js';
 import Criteria36 from './c36/c36.js';
 import Criteria37 from './c37/c37.js';
 import './c3-style.css';
+import AssignPopup3 from './assignPopup.js';
 
 function Criteria3() {
+  // state variables
   const [screenStatus31, setScreenStatus31] = useState(false);
   const [screenStatus32, setScreenStatus32] = useState(false);
   const [screenStatus33, setScreenStatus33] = useState(false);
@@ -16,7 +18,9 @@ function Criteria3() {
   const [screenStatus35, setScreenStatus35] = useState(false);
   const [screenStatus36, setScreenStatus36] = useState(false);
   const [screenStatus37, setScreenStatus37] = useState(false);
+  const [assignStatus3, setAssignStatus3] = useState(false);
 
+  // metric screens functionality
   function onClicking31() {
     setScreenStatus31(!screenStatus31);
   }
@@ -39,6 +43,7 @@ function Criteria3() {
     setScreenStatus37(!screenStatus37);
   }
 
+  // rendering DOM
   return (
     <div className="c3-container">
       {/* Criteria Heading */}
@@ -46,7 +51,16 @@ function Criteria3() {
         <h1 className="c3-heading-style">
           Research, Innovations and Extensions
         </h1>
-        <button className="cx-assign-button-style">Assign</button>
+        <button
+          onClick={() => setAssignStatus3(true)}
+          className="cx-assign-button-style"
+        >
+          Assign
+        </button>
+        <AssignPopup3
+          isAssignClicked={assignStatus3}
+          setIsAssignClicked={setAssignStatus3}
+        />
       </div>
 
       {/* Key Indicators List */}
@@ -55,7 +69,7 @@ function Criteria3() {
       <div className="c3x-container">
         <div className="c3x-subContainer">
           <h1 onClick={onClicking31} className="c3x-heading-style">
-            Promotion of Research and Facilities
+            3.1: Promotion of Research and Facilities
           </h1>
           <button className="c3x-assign-button-style">Assign</button>
         </div>
@@ -66,7 +80,7 @@ function Criteria3() {
       <div className="c3x-container">
         <div className="c3x-subContainer">
           <h1 onClick={onClicking32} className="c3x-heading-style">
-            Resource Mobilization for Research
+            3.2: Resource Mobilization for Research
           </h1>
           <button className="c3x-assign-button-style">Assign</button>
         </div>
@@ -77,7 +91,7 @@ function Criteria3() {
       <div className="c3x-container">
         <div className="c3x-subContainer">
           <h1 onClick={onClicking33} className="c3x-heading-style">
-            Innovation Ecosystem
+            3.3: Innovation Ecosystem
           </h1>
           <button className="c3x-assign-button-style">Assign</button>
         </div>
@@ -88,7 +102,7 @@ function Criteria3() {
       <div className="c3x-container">
         <div className="c3x-subContainer">
           <h1 onClick={onClicking34} className="c3x-heading-style">
-            Research Publications and Awards
+            3.4: Research Publications and Awards
           </h1>
           <button className="c3x-assign-button-style">Assign</button>
         </div>
@@ -99,7 +113,7 @@ function Criteria3() {
       <div className="c3x-container">
         <div className="c3x-subContainer">
           <h1 onClick={onClicking35} className="c3x-heading-style">
-            Consultancy
+            3.5: Consultancy
           </h1>
           <button className="c3x-assign-button-style">Assign</button>
         </div>
@@ -110,7 +124,7 @@ function Criteria3() {
       <div className="c3x-container">
         <div className="c3x-subContainer">
           <h1 onClick={onClicking36} className="c3x-heading-style">
-            Extension Activities
+            3.6: Extension Activities
           </h1>
           <button className="c3x-assign-button-style">Assign</button>
         </div>
@@ -121,7 +135,7 @@ function Criteria3() {
       <div className="c3x-container">
         <div className="c3x-subContainer">
           <h1 onClick={onClicking37} className="c3x-heading-style">
-            Collaboration
+            3.7: Collaboration
           </h1>
           <button className="c3x-assign-button-style">Assign</button>
         </div>

@@ -3,6 +3,7 @@ import './c31-style.css';
 
 // Promotion of Research and Facilities
 function Criteria31() {
+  // state variables
   const [value311t1, setValue311t1] = useState('');
   const [value3121t1, setValue3121t1] = useState('');
   const [value3121t2, setValue3121t2] = useState('');
@@ -24,6 +25,93 @@ function Criteria31() {
   const [value3131t8, setValue3131t8] = useState('');
   const [value3131t9, setValue3131t9] = useState('');
   const [value3131t10, setValue3131t10] = useState('');
+  const [value3131t11, setValue3131t11] = useState('');
+  const [responseButtonStatus312, setResponseButtonStatus312] = useState(false);
+  const [responseButtonStatus313, setResponseButtonStatus313] = useState(false);
+  const [responseValue311, setResponseValue311] = useState('');
+  const [responseValue312, setResponseValue312] = useState('');
+  const [responseValue313, setResponseValue313] = useState('');
+
+  // response button functionality
+  function onClickingViewResponse312() {
+    setResponseButtonStatus312(!responseButtonStatus312);
+    if (
+      value3121t6 === ''
+      || value3121t7 === ''
+      || value3121t8 === ''
+      || value3121t9 === ''
+      || value3121t10 === ''
+    ) {
+      setResponseValue312('Please fill the required fields');
+    } else if (
+      Number.isInteger(parseInt(value3121t6, 10)) === false
+      || Number.isInteger(parseInt(value3121t7, 10)) === false
+      || Number.isInteger(parseInt(value3121t8, 10)) === false
+      || Number.isInteger(parseInt(value3121t9, 10)) === false
+      || Number.isInteger(parseInt(value3121t10, 10)) === false
+    ) {
+      setResponseValue312('Input should be an Integer');
+    } else if (
+      value3121t6 !== ''
+      && value3121t7 !== ''
+      && value3121t8 !== ''
+      && value3121t9 !== ''
+      && value3121t10 !== ''
+    ) {
+      setResponseValue312(
+        (parseInt(value3121t6, 10)
+          + parseInt(value3121t7, 10)
+          + parseInt(value3121t8, 10)
+          + parseInt(value3121t9, 10)
+          + parseInt(value3121t10, 10))
+          / 5
+      );
+    }
+    console.log(responseValue312);
+  }
+
+  function onClickingViewResponse313() {
+    setResponseButtonStatus313(!responseButtonStatus313);
+    if (
+      value3131t6 === ''
+      || value3131t7 === ''
+      || value3131t8 === ''
+      || value3131t9 === ''
+      || value3131t10 === ''
+      || value3131t11 === ''
+    ) {
+      setResponseValue313('Please fill the required fields');
+    } else if (
+      Number.isInteger(parseInt(value3131t6, 10)) === false
+      || Number.isInteger(parseInt(value3131t7, 10)) === false
+      || Number.isInteger(parseInt(value3131t8, 10)) === false
+      || Number.isInteger(parseInt(value3131t9, 10)) === false
+      || Number.isInteger(parseInt(value3131t10, 10)) === false
+      || Number.isInteger(parseInt(value3131t11, 10)) === false
+    ) {
+      setResponseValue313('Input should be an Integer');
+    } else if (
+      value3131t6 !== ''
+      && value3131t7 !== ''
+      && value3131t8 !== ''
+      && value3131t9 !== ''
+      && value3131t10 !== ''
+      && value3131t11 !== ''
+    ) {
+      setResponseValue313(
+        ((parseInt(value3131t6, 10)
+          + parseInt(value3131t7, 10)
+          + parseInt(value3131t8, 10)
+          + parseInt(value3131t9, 10)
+          + parseInt(value3131t10, 10))
+          / parseInt(value3131t11, 10))
+          * 100
+      );
+    }
+    console.log(responseValue313);
+  }
+
+  // sending data to db with API
   const inputDataList = {
     input311t1: value311t1,
     input3121t1: value3121t1,
@@ -53,7 +141,6 @@ function Criteria31() {
     headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
     body: JSON.stringify(inputDataList),
   };
-  console.log(fetchMethod);
   function onClickingSave() {
     fetch('http://localhost:8080/api/v1/fieldinfo', fetchMethod).then(
       (response) => {
@@ -62,6 +149,7 @@ function Criteria31() {
     );
   }
 
+  // rendering DOM
   return (
     <div className="c31-inputFields-mainContainer">
       {/* Key Indicator: 3.1.1 */}
@@ -75,27 +163,21 @@ function Criteria31() {
               uploaded on the institutional website and implemented.
             </h1>
             <label htmlFor="311-t1" className="c31x-label-style">
-              Write description in maximum of 500 words
+              Response:
             </label>
             <textarea
-              onChange={(e) => setValue311t1(e.target.value)}
+              placeholder="Write description in maximum of 500 words"
+              onChange={(e) => {
+                setValue311t1(e.target.value);
+                setResponseValue311(e.target.value);
+              }}
               value={value311t1}
               rows={6}
               className="c31x-textarea-style"
               id="311-t1"
             ></textarea>
           </div>
-          <div className="c31x-docsRequired-container">
-            <h1 className="c31x-docsRequired-heading-style">
-              Documents Required:
-            </h1>
-            <ul>
-              <li className="c31x-docsRequired-listElements-style">
-                Minutes of the Governing Council/ Board of Management/ Academic
-                Council related to research promotion policy and its adoption
-              </li>
-            </ul>
-          </div>
+
           <table className="c31x-table-style">
             <tr>
               <th className="c31x-verticalTable-heading1-style">
@@ -295,6 +377,17 @@ function Criteria31() {
             </table>
           </div>
         </form>
+        <div className="c31x-response-container">
+          <button
+            onClick={onClickingViewResponse312}
+            className="c31x-responseButton-style"
+          >
+            View Response
+          </button>
+          {responseButtonStatus312 ? (
+            <p className="c31x-responseResult-style">{responseValue312}</p>
+          ) : null}
+        </div>
       </div>
 
       {/* Key Indicator: 3.1.3 */}
@@ -405,6 +498,18 @@ function Criteria31() {
               </tr>
             </table>
 
+            <div className="c31xx-label-textInput-container">
+              <label className="c31xx-Heading-style">
+                Total number of full time teachers during the last five years
+              </label>
+              <input
+                onChange={(e) => setValue3131t11(e.target.value)}
+                id="3131-t11"
+                style={{ marginLeft: '4%' }}
+                type="text"
+              />
+            </div>
+
             <table className="c31x-table-style">
               <tr>
                 <th className="c31x-verticalTable-heading1-style">
@@ -444,6 +549,17 @@ function Criteria31() {
             </table>
           </div>
         </form>
+        <div className="c31x-response-container">
+          <button
+            onClick={onClickingViewResponse313}
+            className="c31x-responseButton-style"
+          >
+            View Response
+          </button>
+          {responseButtonStatus313 ? (
+            <p className="c31x-responseResult-style">{responseValue313}</p>
+          ) : null}
+        </div>
       </div>
       <div className="c31x-button-container">
         <button onClick={onClickingSave} className="c31x-button-style">

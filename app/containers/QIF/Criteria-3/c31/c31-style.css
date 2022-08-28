@@ -29,7 +29,7 @@
   color: black;
 }
 .c31x-label-style {
-  font-size: 13px;
+  font-size: 15px;
   font-weight: 600;
   color: black;
 }
@@ -43,22 +43,11 @@
   border-radius: 10px;
   padding: 3%;
 }
-.c31x-docsRequired-container {
-  padding: 2%;
-  padding-bottom: 0;
-}
-.c31x-docsRequired-heading-style {
-  color: black;
-  font-size: medium;
-  font-weight: 600;
-}
-.c31x-docsRequired-listElements-style {
-  color: black;
-  font-size: small;
-  font-weight: 500;
-  list-style: circle;
-}
+
 .c31x-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
   background-color: #cce1eb;
   border-radius: 10px;
   padding: 2.5%;
@@ -76,6 +65,10 @@
   color: black;
   font-size: 15px;
   font-weight: 600;
+}
+.c31xx-label-textInput-container {
+  display: flex;
+  flex-direction: row;
 }
 .c31x-textarea-style {
   width: 60%;
@@ -124,4 +117,30 @@ td {
   font-size: 15px;
   border-radius: 5px;
   margin-right: 5%;
+}
+.c31x-response-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  align-items: center;
+}
+.c31x-responseButton-style {
+  color: #02334d;
+  background-color: #cce1eb;
+  border-radius: 5px;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 2%;
+}
+.c31x-responseResult-style {
+  color: #02334d;
+  background-color: white;
+  border-radius: 5px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #9db4bf;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 2%;
+  padding: 1%;
 }
