@@ -11,16 +11,13 @@ function Criteria25() {
           <div className="c25x-label-textarea-container">
             <h1 className="c25x-heading-style">
               <span className="c25x-span-style">2.5.1: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              Average number of days from the date of last semester-end/ year- end examination till the declaration of results during the last five years
             </h1>
           </div>
           <div className="c25xx-container">
             <h1 className="c25xx-Heading-style">
               <span className="c21xx-span-style">2.5.1.1: </span>
-              The amount of seed money provided by institution to its teachers
-              for research year wise during last five years (INR in lakhs)
+              Number of days from the date of last  semester-end/ year- end examination till the declaration of results year wise during the last  five years
             </h1>
             <table className="c25x-table-style">
               <tr>
@@ -63,8 +60,7 @@ function Criteria25() {
               </tr>
               <tr>
                 <td>
-                Minutes of the Governing Council/ Syndicate/ Board of Management
-                related to research promotion policy adoption
+                List of Programmes and date of last semester and date of declaration of result(Data Template)
                 </td>
                 <td></td>
                 <td>
@@ -82,16 +78,13 @@ function Criteria25() {
           <div className="c25x-label-textarea-container">
             <h1 className="c25x-heading-style">
               <span className="c25x-span-style">2.5.2: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              Average percentage of student complaints/grievances about evaluation against total number appeared in the examinations during the last five years
             </h1>
           </div>
           <div className="c25xx-container">
             <h1 className="c25xx-Heading-style">
               <span className="c21xx-span-style">2.5.2.1: </span>
-              The amount of seed money provided by institution to its teachers
-              for research year wise during last five years (INR in lakhs)
+              Number of complaints/grievances  about evaluation year wise during last five years
             </h1>
             <table className="c25x-table-style">
               <tr>
@@ -134,8 +127,7 @@ function Criteria25() {
               </tr>
               <tr>
                 <td>
-                Minutes of the Governing Council/ Syndicate/ Board of Management
-                related to research promotion policy adoption
+                Number of complaints and total number of students appeared year wise.
                 </td>
                 <td></td>
                 <td>
@@ -153,9 +145,7 @@ function Criteria25() {
           <div className="c25x-label-textarea-container">
             <h1 className="c25x-heading-style">
               <span className="c25x-span-style">2.5.3: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              IT integration and reforms in the examination procedures and processes including Continuous Internal Assessment (CIA) have brought in considerable improvement in Examination Management System (EMS) of the Institution
             </h1>
             <label htmlFor="253-t1" className="c25x-label-style">
               Write description in maximum of 1000 words
@@ -179,7 +169,7 @@ function Criteria25() {
               </th>
             </tr>
             <tr>
-              <td>Any additional information</td>
+              <td>Upload Any additional information</td>
               <td></td>
               <td>
                 <input type="file" />
@@ -187,8 +177,7 @@ function Criteria25() {
             </tr>
             <tr>
               <td>
-                Minutes of the Governing Council/ Syndicate/ Board of Management
-                related to research promotion policy adoption
+              Paste link for Additional Information
               </td>
               <td></td>
               <td>

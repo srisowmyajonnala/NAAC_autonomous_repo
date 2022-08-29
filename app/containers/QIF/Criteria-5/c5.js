@@ -1,73 +1,82 @@
-import React from 'react';
-import { Helmet } from 'react-helmet';
-import brand from 'dan-api/dummy/brand';
-import { PapperBlock, EmptyData } from 'dan-components';
+import React, { useState } from 'react';
+import Criteria51 from './c51/c51.js';
+import Criteria52 from './c52/c52.js';
+import Criteria53 from './c53/c53.js';
+import Criteria54 from './c54/c54.js';
+import './c5-style.css';
 
+function Criteria5() {
+  const [screenStatus51, setScreenStatus51] = useState(false);
+  const [screenStatus52, setScreenStatus52] = useState(false);
+  const [screenStatus53, setScreenStatus53] = useState(false);
+  const [screenStatus54, setScreenStatus54] = useState(false);
 
-function criteriaTrail() {
-  const title = brand.name + ' - Table';
-  const description = brand.desc;
+  function onClicking51() {
+    setScreenStatus51(!screenStatus51);
+  }
+  function onClicking52() {
+    setScreenStatus52(!screenStatus52);
+  }
+  function onClicking53() {
+    setScreenStatus53(!screenStatus53);
+  }
+  function onClicking54() {
+    setScreenStatus54(!screenStatus54);
+  }
+
   return (
-    <form className="sub-card-container">
-                <div className="mini-card-container-1">
-                    <label id="2" className="label-1" for="C311-1">3.1.1:  Grants received from Government and non-government agecies for research products, endownments, Chairs in the institution during the last five years (INR in Lakhs)</label>
-                    <input id="C311-1" class="input-1" type="text"/>
-                </div>
-                <div className="mini-card-container-2">
-                    <label className="label-1" for="firstTable">3.1.1.1:  Total Grants from Government and non-government agencies for research projects, endownments, Chairs in the institution during the last five years (INR in Lakhs)</label>
-                    <table id="firstTable" className="table-1" cellPadding={4} cellSpacing={0} border={1}>
-                        <tbody>
-                        <tr>
-                            <th className="table-headings">2018-19</th>
-                            <th className="table-headings">2017-18</th>
-                            <th className="table-headings">2016-17</th>
-                            <th className="table-headings">2015-16</th>
-                            <th className="table-headings">2014-15</th>
-                        </tr>
-                        <tr>
-                            <td><input className="input-2" type="text"/> </td>
-                            <td><input className="input-2" type="text"/> </td>
-                            <td><input className="input-2" type="text"/> </td>
-                            <td><input className="input-2" type="text"/> </td>
-                            <td><input className="input-2" type="text"/> </td>
-                        </tr>
-                        </tbody>
-                    </table>
-                </div>
+    <div className="c5-container">
+      {/* Criteria Heading */}
+      <div className="c5-heading-container">
+        <h1 className="c5-heading-style">
+        Student Support and Progression
+        </h1>
+      </div>
 
-                <table width={1000} className="table-2" border={2}>
-                    <tr>
-                        <th width={300} className="table-2-heads">File Description</th>
-                        <th width={200} className="table-2-heads">Template</th>
-                        <th width={500} className="table-2-heads">Documents</th>
-                    </tr>
-                    <tr>
-                        <td className="table-2-rows">List of endownments / projects with details of grants <span class="span-style-2">*</span></td>
-                        <td className="table-2-rows">Data Template</td>
-                        <td className="table-2-rows">
-                            <button className="button-style">Upload</button>
-                            <i className="fa-solid fa-circle-question"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className="table-2-rows">e-copies of th egrant award letters for sponsered research projects / endownments</td>
-                        <td className="table-2-rows"></td>
-                        <td className="table-2-rows">
-                            <button className="button-style">Upload</button>
-                            <i className="fa-solid fa-circle-question"></i>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td className="table-2-rows">Any additional information</td>
-                        <td className="table-2-rows"></td>
-                        <td className="table-2-rows">
-                            <button className="button-style">Upload</button>
-                            <i className="fa-solid fa-circle-question"></i>
-                        </td>
-                    </tr>
-                </table>
-            </form>
+      {/* Key Indicators List */}
+
+      {/* Key Indicator: 5.1 */}
+      <div className="c5x-container">
+        <div onClick={onClicking51} className="c5x-subContainer">
+          <h1 className="c5x-heading-style">
+          Student Support
+          </h1>
+          <button className="c5x-assign-button-style">Assign</button>
+        </div>
+      </div>
+      {screenStatus51 ? <Criteria51 /> : null}
+      {/* Key Indicator: 5.2 */}
+      <div className="c5x-container">
+        <div onClick={onClicking52} className="c5x-subContainer">
+          <h1 className="c5x-heading-style">
+          Student Progression
+          </h1>
+          <button className="c5x-assign-button-style">Assign</button>
+        </div>
+      </div>
+      {screenStatus52 ? <Criteria52 /> : null}
+
+      {/* Key Indicator: 5.3 */}
+      <div className="c5x-container">
+        <div onClick={onClicking53} className="c5x-subContainer">
+          <h1 className="c5x-heading-style">IT Infrastructure </h1>
+          <button className="c5x-assign-button-style">Assign</button>
+        </div>
+      </div>
+      {screenStatus53 ? <Criteria53 /> : null}
+
+      {/* Key Indicator: 5.4 */}
+      <div className="c5x-container">
+        <div onClick={onClicking54} className="c5x-subContainer">
+          <h1 className="c5x-heading-style">
+          Alumni Engagement
+          </h1>
+          <button className="c5x-assign-button-style">Assign</button>
+        </div>
+      </div>
+      {screenStatus54 ? <Criteria54 /> : null}
+    </div>
   );
 }
 
-export default criteriaTrail;
+export default Criteria5;

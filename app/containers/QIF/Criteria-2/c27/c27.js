@@ -11,9 +11,7 @@ function Criteria27() {
           <div className="c27x-label-textarea-container">
             <h1 className="c27x-heading-style">
               <span className="c27x-span-style">2.7.1: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              Online student satisfaction survey regarding to teaching learning process.
             </h1>
           </div>
           <table className="c27x-table-style">
@@ -29,7 +27,7 @@ function Criteria27() {
               </th>
             </tr>
             <tr>
-              <td>Any additional information</td>
+              <td>Upload any additional information</td>
               <td></td>
               <td>
                 <input type="file" />
@@ -37,8 +35,7 @@ function Criteria27() {
             </tr>
             <tr>
               <td>
-                Minutes of the Governing Council/ Syndicate/ Board of Management
-                related to research promotion policy adoption
+              Upload database of all currently enrolled students(Data  Template)
               </td>
               <td></td>
               <td>

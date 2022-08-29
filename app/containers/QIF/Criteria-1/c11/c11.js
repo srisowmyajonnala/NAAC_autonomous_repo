@@ -11,9 +11,7 @@ function Criteria11() {
           <div className="c11x-label-textarea-container">
             <h1 className="c11x-heading-style">
               <span className="c11x-span-style">1.1.1: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              Curricula developed and implemented have relevance to the local, national,  regional and global developmental needs which is reflected in Programme outcomes (POs), Programme Specific outcomes (PSOs) and  Course Outcomes (COs) of the Programmes offered by the Institution
             </h1>
             <label htmlFor="111-t1" className="c11x-label-style">
               Write description in maximum of 500 words
@@ -37,7 +35,7 @@ function Criteria11() {
               </th>
             </tr>
             <tr>
-              <td>Any additional information</td>
+              <td>Upload  Additional information </td>
               <td></td>
               <td>
                 <input type="file" />
@@ -45,18 +43,7 @@ function Criteria11() {
             </tr>
             <tr>
               <td>
-                Minutes of the Governing Council/ Syndicate/ Board of Management
-                related to research promotion policy adoption
-              </td>
-              <td></td>
-              <td>
-                <input type="file" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                URL of Policy document on promotion of research uploaded on
-                website
+              Link for Additional information
               </td>
               <td></td>
               <td>
@@ -73,19 +60,17 @@ function Criteria11() {
           <div className="c11x-container">
             <h1 className="c11x-heading-style">
               <span className="c11x-span-style">1.1.2: </span>
-              The institution provides seed money to its teachers for research.
+              Percentage of Programmes where syllabus revision was carried out during the last five years
             </h1>
           </div>
           <div className="c11xx-container">
             <h1 className="c11xx-Heading-style">
               <span className="c11xx-span-style">1.1.2.1: </span>
-              The amount of seed money provided by institution to its teachers
-              for research year wise during last five years (INR in lakhs)
+              How many Programmes were revised out of total number of Programmes offered during the same period within last five years?
             </h1>
             <h1 className="c11xx-Heading-style">
               <span className="c11xx-span-style">1.1.2.2: </span>
-              The amount of seed money provided by institution to its teachers
-              for research year wise during last five years (INR in lakhs)
+              Number of all Programmes offered by the institution during the last five years
             </h1>
             <table className="c11x-table-style">
               <tr>
@@ -100,7 +85,7 @@ function Criteria11() {
                 </th>
               </tr>
               <tr>
-                <td>Any additional information</td>
+                <td>Minutes of relevant Academic Council/BOS meeting </td>
                 <td></td>
                 <td>
                   <input type="file" />
@@ -115,8 +100,7 @@ function Criteria11() {
               </tr>
               <tr>
                 <td>
-                  Budget and expenditure statements signed by the Finance
-                  Officer indicating seed money provided and utilized
+                Details of program syllabus revision in last 5 years(Data Template)
                 </td>
                 <td></td>
                 <td>
@@ -134,15 +118,15 @@ function Criteria11() {
           <div className="c11x-container">
             <h1 className="c11x-heading-style">
               <span className="c11x-span-style">1.1.3: </span>
-              Percentage of teachers awarded national/ international fellowship
-              for advanced studies/ research during the last five years
+              Average percentage of courses having focus on employability/
+entrepreneurship/ skill development offered by the institution during the last five years
+
             </h1>
           </div>
           <div className="c11xx-container">
             <h1 className="c11xx-Heading-style">
               <span className="c11xx-span-style">1.1.3.1: </span>
-              The number of teachers awarded national/ international fellowship
-              for advanced studies/ research year wise during last five years
+              Number of courses having focus on employability/ entrepreneurship/ skill development year wise during last five years
             </h1>
             <table className="c11x-table-style">
               <tr>
@@ -164,7 +148,7 @@ function Criteria11() {
                 </td>
               </tr>
               <tr>
-                <td>e-copies of the award letters of the teachers</td>
+                <td>Programme / Curriculum/ Syllabus of the courses</td>
                 <td></td>
                 <td>
                   <input type="file" />
@@ -172,8 +156,7 @@ function Criteria11() {
               </tr>
               <tr>
                 <td>
-                  List of teachers and their international fellowship details
-                  (Data Template)
+                Minutes of the Boards of Studies/ Academic Council meetings with approvals for these courses
                 </td>
                 <td></td>
                 <td>
@@ -181,10 +164,14 @@ function Criteria11() {
                 </td>
               </tr>
               <tr>
+                <td>MoU's with relevant organizations for these courses, if any</td>
+                <td></td>
                 <td>
-                  List of teachers and their international fellowship details
-                  (Data Template)
+                  <input type="file" />
                 </td>
+              </tr>
+              <tr>
+                <td>Average percentage of courses having focus on employability/ entrepreneurship(Data  Template)</td>
                 <td></td>
                 <td>
                   <input type="file" />

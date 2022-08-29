@@ -29,7 +29,7 @@ function Criteria1() {
       {/* Criteria Heading */}
       <div className="c1-heading-container">
         <h1 className="c1-heading-style">
-          Research, Innovations and Extensions
+        Curricular Aspects
         </h1>
       </div>
 
@@ -39,7 +39,7 @@ function Criteria1() {
       <div className="c1x-container">
         <div onClick={onClicking11} className="c1x-subContainer">
           <h1 className="c1x-heading-style">
-            Promotion of Research and Facilities
+          Curriculum Design and Development
           </h1>
           <button className="c1x-assign-button-style">Assign</button>
         </div>
@@ -49,7 +49,7 @@ function Criteria1() {
       <div className="c1x-container">
         <div onClick={onClicking12} className="c1x-subContainer">
           <h1 className="c1x-heading-style">
-            Resource Mobilization for Research
+          Academic Flexibility
           </h1>
           <button className="c1x-assign-button-style">Assign</button>
         </div>
@@ -59,7 +59,7 @@ function Criteria1() {
       {/* Key Indicator: 1.3 */}
       <div className="c1x-container">
         <div onClick={onClicking13} className="c1x-subContainer">
-          <h1 className="c1x-heading-style">Innovation Ecosystem</h1>
+          <h1 className="c1x-heading-style">Curriculum Enrichment </h1>
           <button className="c1x-assign-button-style">Assign</button>
         </div>
       </div>
@@ -69,7 +69,7 @@ function Criteria1() {
       <div className="c1x-container">
         <div onClick={onClicking14} className="c1x-subContainer">
           <h1 className="c1x-heading-style">
-            Research Publications and Awards
+          Feedback System
           </h1>
           <button className="c1x-assign-button-style">Assign</button>
         </div>

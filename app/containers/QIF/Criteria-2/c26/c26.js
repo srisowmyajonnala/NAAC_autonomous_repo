@@ -11,9 +11,7 @@ function Criteria26() {
           <div className="c26x-label-textarea-container">
             <h1 className="c26x-heading-style">
               <span className="c26x-span-style">2.6.1: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              Programme outcomes and course outcomes for all Programmes offered by the institution are stated and displayed on website and communicated to teachers and students
             </h1>
             <label htmlFor="261-t1" className="c26x-label-style">
               Write description in maximum of 500 words
@@ -37,7 +35,7 @@ function Criteria26() {
               </th>
             </tr>
             <tr>
-              <td>Any additional information</td>
+              <td>Upload any additional information</td>
               <td></td>
               <td>
                 <input type="file" />
@@ -45,8 +43,16 @@ function Criteria26() {
             </tr>
             <tr>
               <td>
-                Minutes of the Governing Council/ Syndicate/ Board of Management
-                related to research promotion policy adoption
+              Link for Additional Information
+              </td>
+              <td></td>
+              <td>
+                <input type="file" />
+              </td>
+            </tr>
+            <tr>
+              <td>
+              Upload COs for all courses (exemplars from Glossary)
               </td>
               <td></td>
               <td>
@@ -63,9 +69,7 @@ function Criteria26() {
           <div className="c26x-label-textarea-container">
             <h1 className="c26x-heading-style">
               <span className="c26x-span-style">2.6.2: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              Attainment of program outcomes and course outcomes are evaluated by the institution
             </h1>
             <label htmlFor="262-t1" className="c26x-label-style">
               Write description in maximum of 500 words
@@ -89,7 +93,7 @@ function Criteria26() {
               </th>
             </tr>
             <tr>
-              <td>Any additional information</td>
+              <td>Upload any additional information</td>
               <td></td>
               <td>
                 <input type="file" />
@@ -97,8 +101,7 @@ function Criteria26() {
             </tr>
             <tr>
               <td>
-                Minutes of the Governing Council/ Syndicate/ Board of Management
-                related to research promotion policy adoption
+              Paste Link for Additional Information
               </td>
               <td></td>
               <td>
@@ -114,23 +117,17 @@ function Criteria26() {
           <div className="c26x-label-textarea-container">
             <h1 className="c26x-heading-style">
               <span className="c26x-span-style">2.6.3: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              Pass percentage of students (Data for the latest completed academic year)
             </h1>
           </div>
           <div className="c13xx-container">
             <h1 className="c26x-heading-style">
               <span className="c26x-span-style">2.6.3.1: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              Total number of final year students who passed the examination conducted by Institution.
             </h1>
             <h1 className="c26x-heading-style">
               <span className="c26x-span-style">2.6.3.2: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              Total number of final year students who appeared for the examination
             </h1>
             <table className="c26x-table-style">
               <tr>
@@ -145,7 +142,7 @@ function Criteria26() {
                 </th>
               </tr>
               <tr>
-                <td>Any additional information</td>
+                <td>Upload List of Programmes and number of students passed and appeared in the final year examination(Data Template)</td>
                 <td></td>
                 <td>
                   <input type="file" />
@@ -153,8 +150,7 @@ function Criteria26() {
               </tr>
               <tr>
                 <td>
-                Minutes of the Governing Council/ Syndicate/ Board of Management
-                related to research promotion policy adoption
+                Upload any additional information
                 </td>
                 <td></td>
                 <td>
@@ -162,7 +158,7 @@ function Criteria26() {
                 </td>
               </tr>
               <tr>
-                <td>Any additional information</td>
+                <td>Paste link for the annual report</td>
                 <td></td>
                 <td>
                   <input type="file" />

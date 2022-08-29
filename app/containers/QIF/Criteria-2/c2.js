@@ -43,7 +43,7 @@ function Criteria2() {
       {/* Criteria Heading */}
       <div className="c2-heading-container">
         <h1 className="c2-heading-style">
-          Research, Innovations and Extensions
+        Teaching-Learning and Evaluation
         </h1>
       </div>
 
@@ -53,7 +53,7 @@ function Criteria2() {
       <div className="c2x-container">
         <div onClick={onClicking21} className="c2x-subContainer">
           <h1 className="c2x-heading-style">
-            Promotion of Research and Facilities
+          Student Enrolment and Profile
           </h1>
           <button className="c2x-assign-button-style">Assign</button>
         </div>
@@ -63,7 +63,7 @@ function Criteria2() {
       <div className="c2x-container">
         <div onClick={onClicking22} className="c2x-subContainer">
           <h1 className="c2x-heading-style">
-            Resource Mobilization for Research
+          Catering to Student Diversity
           </h1>
           <button className="c2x-assign-button-style">Assign</button>
         </div>
@@ -73,7 +73,7 @@ function Criteria2() {
       {/* Key Indicator: 2.3 */}
       <div className="c2x-container">
         <div onClick={onClicking23} className="c2x-subContainer">
-          <h1 className="c2x-heading-style">Innovation Ecosystem</h1>
+          <h1 className="c2x-heading-style">Teaching - Learning Process </h1>
           <button className="c2x-assign-button-style">Assign</button>
         </div>
       </div>
@@ -83,7 +83,7 @@ function Criteria2() {
       <div className="c2x-container">
         <div onClick={onClicking24} className="c2x-subContainer">
           <h1 className="c2x-heading-style">
-            Research Publications and Awards
+          Teacher Profile and Quality
           </h1>
           <button className="c2x-assign-button-style">Assign</button>
         </div>
@@ -93,7 +93,7 @@ function Criteria2() {
       {/* Key Indicator: 2.5 */}
       <div className="c2x-container">
         <div onClick={onClicking25} className="c2x-subContainer">
-          <h1 className="c2x-heading-style">Innovation Ecosystem</h1>
+          <h1 className="c2x-heading-style">Evaluation Process and Reforms </h1>
           <button className="c2x-assign-button-style">Assign</button>
         </div>
       </div>
@@ -102,7 +102,7 @@ function Criteria2() {
       {/* Key Indicator: 2.6 */}
       <div className="c2x-container">
         <div onClick={onClicking26} className="c2x-subContainer">
-          <h1 className="c2x-heading-style">Innovation Ecosystem</h1>
+          <h1 className="c2x-heading-style">Student Performance and Learning Outcomes</h1>
           <button className="c2x-assign-button-style">Assign</button>
         </div>
       </div>
@@ -111,7 +111,7 @@ function Criteria2() {
       {/* Key Indicator: 2.7 */}
       <div className="c2x-container">
         <div onClick={onClicking27} className="c2x-subContainer">
-          <h1 className="c2x-heading-style">Innovation Ecosystem</h1>
+          <h1 className="c2x-heading-style">Student Satisfaction Survey</h1>
           <button className="c2x-assign-button-style">Assign</button>
         </div>
       </div>

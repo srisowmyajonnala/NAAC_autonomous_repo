@@ -1,4 +1,4 @@
-.c42-inputFields-mainContainer {
+.c43-inputFields-mainContainer {
     display: flex;
     flex-direction: column;
     margin: 3%;
@@ -6,7 +6,7 @@
     background-color: white;
     border-radius: 10px;
   }
-  .c42x-eachInputField-container {
+  .c43x-eachInputField-container {
     display: flex;
     flex-direction: row;
     border-color: #02334d;
@@ -16,52 +16,52 @@
     padding: 3%;
     margin: 2%;
   }
-  .c42x-span-style {
+  .c43x-span-style {
     font-weight: bold;
   }
-  .c42xx-span-style {
+  .c43xx-span-style {
     font-weight: 700;
   }
-  .c42x-heading-style {
+  .c43x-heading-style {
     font-size: medium;
     font-weight: 600;
     color: black;
   }
-  .c42x-label-style {
+  .c43x-label-style {
     font-size: 13px;
     font-weight: 600;
     color: black;
   }
-  .c42x-input-style {
+  .c43x-input-style {
     width: 30%;
     height: 50%;
   }
-  .c42x-label-textarea-container {
+  .c43x-label-textarea-container {
     display: flex;
     flex-direction: column;
     background-color: #9db4bf;
     border-radius: 30px;
     padding: 3%;
   }
-  .c42x-container {
+  .c43x-container {
     background-color: #9db4bf;
     border-radius: 30px;
     padding: 3%;
     padding-bottom: 2%;
   }
-  .c42xx-container {
+  .c43xx-container {
     border-color: #9db4bf;
     border-style: solid;
     border-radius: 30px;
     margin: 2%;
     padding: 3%;
   }
-  .c42xx-Heading-style {
+  .c43xx-Heading-style {
     color: black;
     font-size: 15px;
     font-weight: 600;
   }
-  .c42x-textarea-style {
+  .c43x-textarea-style {
     width: 60%;
     border-radius: 5px;
   }
@@ -70,27 +70,27 @@
   td {
     border: 2px solid #9db4bf;
   }
-  .c42x-table-style {
+  .c43x-table-style {
     padding: 2%;
   }
-  .c42x-verticalTable-heading1-style {
+  .c43x-verticalTable-heading1-style {
     background-color: #9db4bf;
     border-right-color: white;
     width: 40%;
     color: black;
   }
-  .c42x-verticalTable-heading2-style {
+  .c43x-verticalTable-heading2-style {
     background-color: #9db4bf;
     border-right-color: white;
     width: 20%;
     color: black;
   }
-  .c42x-verticalTable-heading3-style {
+  .c43x-verticalTable-heading3-style {
     background-color: #9db4bf;
     width: 30%;
     color: black;
   }
-  .c42x-horizontalTable-heading-style {
+  .c43x-horizontalTable-heading-style {
     color: black;
     width: 25%;
   }
@@ -100,11 +100,11 @@
   td {
     font-weight: 600;
   }
-  .c42x-button-container {
+  .c43x-button-container {
     display: flex;
     justify-content: flex-end;
   }
-  .c42x-button-style {
+  .c43x-button-style {
     background-color: #02334d;
     color: #e4f1f7;
     font-size: 15px;

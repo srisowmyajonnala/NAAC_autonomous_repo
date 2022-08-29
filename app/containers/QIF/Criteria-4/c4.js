@@ -1,8 +1,8 @@
 import React, { useState } from 'react';
-import Criteria21 from './c41/c41.js';
-import Criteria22 from './c42/c42.js';
-import Criteria23 from './c43/c43.js';
-import Criteria24 from './c44/c44.js';
+import Criteria41 from './c41/c41.js';
+import Criteria42 from './c42/c42.js';
+import Criteria43 from './c43/c43.js';
+import Criteria44 from './c44/c44.js';
 import './c4-style.css';
 
 function Criteria4() {
@@ -29,7 +29,7 @@ function Criteria4() {
       {/* Criteria Heading */}
       <div className="c4-heading-container">
         <h1 className="c4-heading-style">
-          Research, Innovations and Extensions
+        Infrastructure and Learning Resources
         </h1>
       </div>
 
@@ -39,7 +39,7 @@ function Criteria4() {
       <div className="c4x-container">
         <div onClick={onClicking41} className="c4x-subContainer">
           <h1 className="c4x-heading-style">
-            Promotion of Research and Facilities
+          Physical Facilities
           </h1>
           <button className="c4x-assign-button-style">Assign</button>
         </div>
@@ -49,7 +49,7 @@ function Criteria4() {
       <div className="c4x-container">
         <div onClick={onClicking42} className="c4x-subContainer">
           <h1 className="c4x-heading-style">
-            Resource Mobilization for Research
+          Library as a Learning Resource
           </h1>
           <button className="c4x-assign-button-style">Assign</button>
         </div>
@@ -59,7 +59,7 @@ function Criteria4() {
       {/* Key Indicator: 4.3 */}
       <div className="c4x-container">
         <div onClick={onClicking43} className="c4x-subContainer">
-          <h1 className="c4x-heading-style">Innovation Ecosystem</h1>
+          <h1 className="c4x-heading-style">IT Infrastructure </h1>
           <button className="c4x-assign-button-style">Assign</button>
         </div>
       </div>
@@ -69,7 +69,7 @@ function Criteria4() {
       <div className="c4x-container">
         <div onClick={onClicking44} className="c4x-subContainer">
           <h1 className="c4x-heading-style">
-            Research Publications and Awards
+          Maintenance of Campus Infrastructure
           </h1>
           <button className="c4x-assign-button-style">Assign</button>
         </div>

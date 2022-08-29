@@ -11,9 +11,7 @@ function Criteria24() {
           <div className="c24x-label-textarea-container">
             <h1 className="c24x-heading-style">
               <span className="c24x-span-style">2.4.1: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              Average percentage of full time teachers against sanctioned posts during the last five years
             </h1>
           </div>
           <table className="c24x-table-style">
@@ -29,7 +27,7 @@ function Criteria24() {
               </th>
             </tr>
             <tr>
-              <td>Any additional information</td>
+              <td>Year wise full time teachers and sanctioned posts for 5 years(Data Template)</td>
               <td></td>
               <td>
                 <input type="file" />
@@ -37,8 +35,7 @@ function Criteria24() {
             </tr>
             <tr>
               <td>
-                Minutes of the Governing Council/ Syndicate/ Board of Management
-                related to research promotion policy adoption
+              Any additional information
               </td>
               <td></td>
               <td>
@@ -47,8 +44,7 @@ function Criteria24() {
             </tr>
             <tr>
               <td>
-                Minutes of the Governing Council/ Syndicate/ Board of Management
-                related to research promotion policy adoption
+              List of the faculty members authenticated by the Head of HEI
               </td>
               <td></td>
               <td>
@@ -65,14 +61,13 @@ function Criteria24() {
           <div className="c24x-container">
             <h1 className="c24x-heading-style">
               <span className="c24x-span-style">2.4.2: </span>
-              The institution provides seed money to its teachers for research.
+              Average percentage of full time teachers with Ph.D. / D.M. / M.Ch. / D.N.B Super speciality / D.Sc. / D.Litt. during the last five years
             </h1>
           </div>
           <div className="c24xx-container">
             <h1 className="c24xx-Heading-style">
               <span className="c24xx-span-style">2.4.2.1: </span>
-              The amount of seed money provided by institution to its teachers
-              for research year wise during last five years (INR in lakhs)
+              Number of full time teachers with Ph.D./ D.M. / M.Ch. / D.N.B Super speciality / D.Sc. / D.Litt.  year wise during last five years
             </h1>
             <table className="c21x-table-style">
               <tr>
@@ -114,7 +109,7 @@ function Criteria24() {
                 </td>
               </tr>
               <tr>
-                <td>Any additional information</td>
+                <td>List of number of full time teachers with  PhD./ D.M. / M.Ch. / D.N.B Super specialty / D.Sc. / D.Litt. and number of full time teachers for 5 years (Data Template)</td>
                 <td></td>
                 <td>
                   <input type="file" />
@@ -131,14 +126,13 @@ function Criteria24() {
           <div className="c24x-container">
             <h1 className="c24x-heading-style">
               <span className="c24x-span-style">2.4.3: </span>
-              The institution provides seed money to its teachers for research.
+              Average teaching experience of full time teachers in the same institution (Data for the latest completed academic year in number of years)
             </h1>
           </div>
           <div className="c24xx-container">
             <h1 className="c24xx-Heading-style">
               <span className="c24xx-span-style">2.4.3.1: </span>
-              The amount of seed money provided by institution to its teachers
-              for research year wise during last five years (INR in lakhs)
+              Total experience of full-time teachers
             </h1>
             <table className="c24x-table-style">
               <tr>
@@ -160,7 +154,7 @@ function Criteria24() {
                 </td>
               </tr>
               <tr>
-                <td>Any additional information</td>
+                <td>List of Teachers including their PAN, designation, dept and experience details(Data Template as of 2.4.1)</td>
                 <td></td>
                 <td>
                   <input type="file" />

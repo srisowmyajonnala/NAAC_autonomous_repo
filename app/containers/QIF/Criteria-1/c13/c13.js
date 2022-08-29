@@ -45,18 +45,7 @@ function Criteria13() {
             </tr>
             <tr>
               <td>
-                Minutes of the Governing Council/ Syndicate/ Board of Management
-                related to research promotion policy adoption
-              </td>
-              <td></td>
-              <td>
-                <input type="file" />
-              </td>
-            </tr>
-            <tr>
-              <td>
-                URL of Policy document on promotion of research uploaded on
-                website
+              Upload the list and description of the courses which address the Gender, Environment and Sustainability, Human Values and Professional Ethics into the Curriculum
               </td>
               <td></td>
               <td>
@@ -73,14 +62,13 @@ function Criteria13() {
           <div className="c13x-container">
             <h1 className="c13x-heading-style">
               <span className="c13x-span-style">1.3.2: </span>
-              The institution provides seed money to its teachers for research.
+              Number of value-added courses for imparting transferable and life skills offered during last five years
             </h1>
           </div>
           <div className="c13xx-container">
             <h1 className="c13xx-Heading-style">
               <span className="c13xx-span-style">1.3.2.1: </span>
-              The amount of seed money provided by institution to its teachers
-              for research year wise during last five years (INR in lakhs)
+              How many new value-added courses are added within the last 5 years
             </h1>
             <table className="c13x-table-style">
               <tr>
@@ -102,7 +90,7 @@ function Criteria13() {
                 </td>
               </tr>
               <tr>
-                <td>Any additional information</td>
+                <td>Brochure or any other document relating to value added courses</td>
                 <td></td>
                 <td>
                   <input type="file" />
@@ -110,8 +98,7 @@ function Criteria13() {
               </tr>
               <tr>
                 <td>
-                  Budget and expenditure statements signed by the Finance
-                  Officer indicating seed money provided and utilized
+                List of value added courses (Data Template)
                 </td>
                 <td></td>
                 <td>
@@ -129,15 +116,13 @@ function Criteria13() {
           <div className="c13x-container">
             <h1 className="c13x-heading-style">
               <span className="c13x-span-style">1.3.3: </span>
-              Percentage of teachers awarded national/ international fellowship
-              for advanced studies/ research during the last five years
+              Average Percentage of students enrolled in the courses under 1.3.2 above
             </h1>
           </div>
           <div className="c13xx-container">
             <h1 className="c13xx-Heading-style">
               <span className="c13xx-span-style">1.3.3.1: </span>
-              The number of teachers awarded national/ international fellowship
-              for advanced studies/ research year wise during last five years
+              TNumber of students enrolled in value added courses (beyond the curriculum) offered  year wise during last five years
             </h1>
             <table className="c13x-table-style">
               <tr>
@@ -179,27 +164,7 @@ function Criteria13() {
                 </td>
               </tr>
               <tr>
-                <td>e-copies of the award letters of the teachers</td>
-                <td></td>
-                <td>
-                  <input type="file" />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  List of teachers and their international fellowship details
-                  (Data Template)
-                </td>
-                <td></td>
-                <td>
-                  <input type="file" />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  List of teachers and their international fellowship details
-                  (Data Template)
-                </td>
+                <td>List of students enrolled (Data Template as of 1.3.2)</td>
                 <td></td>
                 <td>
                   <input type="file" />
@@ -216,14 +181,13 @@ function Criteria13() {
           <div className="c13x-container">
             <h1 className="c13x-heading-style">
               <span className="c13x-span-style">1.3.4: </span>
-              The institution provides seed money to its teachers for research.
+              Percentage of students undertaking field projects/ internships / student projects (Data for the latest completed academic year)
             </h1>
           </div>
           <div className="c13xx-container">
             <h1 className="c13xx-Heading-style">
               <span className="c13xx-span-style">1.3.4.1: </span>
-              The amount of seed money provided by institution to its teachers
-              for research year wise during last five years (INR in lakhs)
+              Number of students undertaking field projects / internships / student projects
             </h1>
             <table className="c13x-table-style">
               <tr>
@@ -245,7 +209,7 @@ function Criteria13() {
                 </td>
               </tr>
               <tr>
-                <td>Any additional information</td>
+                <td>List of programs and number of students undertaking field projects / internships / student projects  (Data Template)</td>
                 <td></td>
                 <td>
                   <input type="file" />

@@ -11,9 +11,7 @@ function Criteria22() {
           <div className="c22x-label-textarea-container">
             <h1 className="c22x-heading-style">
               <span className="c22x-span-style">2.2.1: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              The institution assesses the learning levels of the students  and organises special Programmes for advanced learners and slow learners
             </h1>
             <label htmlFor="221-t1" className="c22x-label-style">
               Write description in maximum of 500 words
@@ -37,7 +35,7 @@ function Criteria22() {
               </th>
             </tr>
             <tr>
-              <td>Any additional information</td>
+              <td>Paste link for additional information</td>
               <td></td>
               <td>
                 <input type="file" />
@@ -45,8 +43,7 @@ function Criteria22() {
             </tr>
             <tr>
               <td>
-                Minutes of the Governing Council/ Syndicate/ Board of Management
-                related to research promotion policy adoption
+              Upload Any additional information
               </td>
               <td></td>
               <td>
@@ -63,7 +60,7 @@ function Criteria22() {
           <div className="c22x-container">
             <h1 className="c22x-heading-style">
               <span className="c22x-span-style">2.2.2: </span>
-              The institution provides seed money to its teachers for research.
+              Student - Full time teacher ratio (Data for the latest completed academic year)
             </h1>
           </div>
           <table className="c22x-table-style">

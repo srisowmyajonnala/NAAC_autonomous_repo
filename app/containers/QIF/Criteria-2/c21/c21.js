@@ -11,21 +11,17 @@ function Criteria21() {
           <div className="c21x-label-textarea-container">
             <h1 className="c21x-heading-style">
               <span className="c21x-span-style">2.1.1: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              Average Enrolment percentage (Average of last five years)
             </h1>
           </div>
           <div className="c21xx-container">
             <h1 className="c21xx-Heading-style">
               <span className="c21xx-span-style">2.1.1.1: </span>
-              The amount of seed money provided by institution to its teachers
-              for research year wise during last five years (INR in lakhs)
+              Number of students admitted year wise during last five years
             </h1>
             <h1 className="c21xx-Heading-style">
               <span className="c21xx-span-style">2.1.1.2: </span>
-              The amount of seed money provided by institution to its teachers
-              for research year wise during last five years (INR in lakhs)
+              Number of sanctioned seats year wise during last five years
             </h1>
             <table className="c21x-table-style">
               <tr>
@@ -48,8 +44,7 @@ function Criteria21() {
               </tr>
               <tr>
                 <td>
-                Minutes of the Governing Council/ Syndicate/ Board of Management
-                related to research promotion policy adoption
+                Demand Ratio (Average of Last five years) based on Data Template upload the document
                 </td>
                 <td></td>
                 <td>
@@ -67,14 +62,13 @@ function Criteria21() {
           <div className="c21x-container">
             <h1 className="c21x-heading-style">
               <span className="c21x-span-style">2.1.2: </span>
-              The institution provides seed money to its teachers for research.
+              Average percentage of seats filled against reserved categories (SC, ST, OBC, Divyangjan, etc. as per applicable reservation policy ) during the last five years ( exclusive of supernumerary seats)
             </h1>
           </div>
           <div className="c21xx-container">
             <h1 className="c21xx-Heading-style">
               <span className="c21xx-span-style">2.1.2.1: </span>
-              The amount of seed money provided by institution to its teachers
-              for research year wise during last five years (INR in lakhs)
+              Number of actual students admitted from the reserved categories year wise during last five years
             </h1>
             <table className="c21x-table-style">
               <tr>
@@ -116,7 +110,7 @@ function Criteria21() {
                 </td>
               </tr>
               <tr>
-                <td>Any additional information</td>
+                <td>Average percentage of seats filled against seats reserved (Data Template)</td>
                 <td></td>
                 <td>
                   <input type="file" />

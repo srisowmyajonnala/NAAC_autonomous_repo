@@ -11,9 +11,7 @@ function Criteria23() {
           <div className="c23x-label-textarea-container">
             <h1 className="c23x-heading-style">
               <span className="c23x-span-style">2.3.1: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              Student centric methods, such as experiential learning, participative learning and problem solving methodologies are used for enhancing learning experiences
             </h1>
             <label htmlFor="231-t1" className="c23x-label-style">
               Write description in maximum of 500 words
@@ -37,7 +35,7 @@ function Criteria23() {
               </th>
             </tr>
             <tr>
-              <td>Any additional information</td>
+              <td>Upload Any additional information</td>
               <td></td>
               <td>
                 <input type="file" />
@@ -45,8 +43,7 @@ function Criteria23() {
             </tr>
             <tr>
               <td>
-                Minutes of the Governing Council/ Syndicate/ Board of Management
-                related to research promotion policy adoption
+              Link for Additional Information
               </td>
               <td></td>
               <td>
@@ -63,9 +60,7 @@ function Criteria23() {
           <div className="c23x-label-textarea-container">
             <h1 className="c23x-heading-style">
               <span className="c23x-span-style">2.3.2: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              Teachers use ICT enabled tools including online resources for effective teaching and learning process
             </h1>
             <label htmlFor="232-t1" className="c23x-label-style">
               Write description in maximum of 500 words
@@ -89,7 +84,14 @@ function Criteria23() {
               </th>
             </tr>
             <tr>
-              <td>Any additional information</td>
+              <td>Upload any additional information</td>
+              <td></td>
+              <td>
+                <input type="file" />
+              </td>
+            </tr>
+            <tr>
+              <td>Provide link for webpage describing ICT enabled tools including online resources for effective teaching and learning process</td>
               <td></td>
               <td>
                 <input type="file" />
@@ -105,11 +107,11 @@ function Criteria23() {
           <div className="c23x-container">
             <h1 className="c23x-heading-style">
               <span className="c23x-span-style">2.3.3: </span>
-              The institution provides seed money to its teachers for research.
+              Ratio of students to mentor for academic and other related issues (Data for the latest completed academic  year )
             </h1>
             <h1 className="c23x-heading-style">
               <span className="c23x-span-style">2.3.3.1: </span>
-              The institution provides seed money to its teachers for research.
+              Number of mentors
             </h1>
           </div>
           <table className="c23x-table-style">
@@ -125,21 +127,21 @@ function Criteria23() {
               </th>
             </tr>
             <tr>
-              <td>Any additional information</td>
+              <td>Upload year wise, number of students enrolled and full time teachers on roll. </td>
               <td></td>
               <td>
                 <input type="file" />
               </td>
             </tr>
             <tr>
-              <td>Any additional information</td>
+              <td>Circulars pertaining to assigning mentors to mentees </td>
               <td></td>
               <td>
                 <input type="file" />
               </td>
             </tr>
             <tr>
-              <td>Any additional information</td>
+              <td>mentor/mentee ratio </td>
               <td></td>
               <td>
                 <input type="file" />
@@ -155,9 +157,7 @@ function Criteria23() {
           <div className="c23x-label-textarea-container">
             <h1 className="c23x-heading-style">
               <span className="c23x-span-style">2.3.4: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              Preparation and adherence of Academic Calendar and Teaching plans by the institution
             </h1>
             <label htmlFor="234-t1" className="c23x-label-style">
               Write description in maximum of 500 words
@@ -181,7 +181,7 @@ function Criteria23() {
               </th>
             </tr>
             <tr>
-              <td>Any additional information</td>
+              <td>Upload Academic Calendar and Teaching plans for five years</td>
               <td></td>
               <td>
                 <input type="file" />

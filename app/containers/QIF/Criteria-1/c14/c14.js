@@ -11,9 +11,7 @@ function Criteria14() {
           <div className="c14x-label-textarea-container">
             <h1 className="c14x-heading-style">
               <span className="c14x-span-style">1.4.1: </span>
-              The institution Research facilities are frequently updated and
-              there is well defined policy for promotion of research which is
-              uploaded on the institutional website and implemented.
+              Structured feedback for design and review of syllabus ( semester wise / year wise) is obtained from 1) Students, 2) Teachers, 3) Employers, 4) Alumni
             </h1>
           </div>
           <table className="c14x-table-style">
@@ -29,7 +27,7 @@ function Criteria14() {
               </th>
             </tr>
             <tr>
-              <td>Any additional information</td>
+              <td>URL for stakeholder feedback report</td>
               <td></td>
               <td>
                 <input type="file" />
@@ -37,8 +35,7 @@ function Criteria14() {
             </tr>
             <tr>
               <td>
-                Minutes of the Governing Council/ Syndicate/ Board of Management
-                related to research promotion policy adoption
+              Action taken report of the Institution on feedback report as  minuted by the Governing Council, Syndicate, Board of Management(Upload)
               </td>
               <td></td>
               <td>
@@ -47,8 +44,7 @@ function Criteria14() {
             </tr>
             <tr>
               <td>
-                URL of Policy document on promotion of research uploaded on
-                website
+              Any additional information
               </td>
               <td></td>
               <td>
@@ -65,37 +61,37 @@ function Criteria14() {
           <div className="c14x-container">
             <h1 className="c14x-heading-style">
               <span className="c14x-span-style">1.4.2: </span>
-              The institution provides seed money to its teachers for research.
+              The feedback system of the Institution comprises of the following :
             </h1>
-          </div>
-          <div className="c14xx-container">
-            <table className="c14x-table-style">
-              <tr>
-                <th className="c14x-verticalTable-heading1-style">
+            <div className="c14xx-container">
+              <table className="c14x-table-style">
+                <tr>
+                  <th className="c14x-verticalTable-heading1-style">
                   File Description
-                </th>
-                <th className="c14x-verticalTable-heading2-style">
+                  </th>
+                  <th className="c14x-verticalTable-heading2-style">
                   File Template
-                </th>
-                <th className="c14x-verticalTable-heading3-style">
+                  </th>
+                  <th className="c14x-verticalTable-heading3-style">
                   Documents upload
-                </th>
-              </tr>
-              <tr>
-                <td>Any additional information</td>
-                <td></td>
-                <td>
-                  <input type="file" />
-                </td>
-              </tr>
-              <tr>
-                <td>Any additional information</td>
-                <td></td>
-                <td>
-                  <input type="file" />
-                </td>
-              </tr>
-            </table>
+                  </th>
+                </tr>
+                <tr>
+                  <td>Any additional information</td>
+                  <td></td>
+                  <td>
+                    <input type="file" />
+                  </td>
+                </tr>
+                <tr>
+                  <td>URL for stakeholder feedback report</td>
+                  <td></td>
+                  <td>
+                    <input type="file" />
+                  </td>
+                </tr>
+              </table>
+            </div>
           </div>
         </form>
       </div>
