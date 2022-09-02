@@ -1,12 +1,13 @@
-import React, { useContext } from "react";
-import { PropTypes } from "prop-types";
-import { Switch, Route } from "react-router-dom";
-import Dashboard from "../Templates/Dashboard";
-import { ThemeContext } from "./ThemeWrapper";
+import React, { useContext } from 'react';
+import { PropTypes } from 'prop-types';
+import { Switch, Route } from 'react-router-dom';
+import Dashboard from '../Templates/Dashboard';
+import { ThemeContext } from './ThemeWrapper';
 import {
   Parent,
   DashboardPage,
   BlankPage,
+  ProfileOfTheCollege,
   Criteria1,
   Criteria2,
   Criteria3,
@@ -15,7 +16,7 @@ import {
   Criteria6,
   Error,
   NotFound,
-} from "../pageListAsync";
+} from '../pageListAsync';
 
 function Application(props) {
   const { history } = props;
@@ -26,6 +27,10 @@ function Application(props) {
         <Route exact path="/app" component={BlankPage} />
         <Route exact path="/app/blank-page" component={BlankPage} />
         <Route path="/app/pages/dashboard" component={DashboardPage} />
+        <Route
+          path="/app/SSR/Profile Of The College"
+          component={ProfileOfTheCollege}
+        />
         <Route path="/app/QIF/Criteria-1" component={Criteria1} />
         <Route path="/app/QIF/Criteria-2" component={Criteria2} />
         <Route path="/app/QIF/Criteria-3" component={Criteria3} />

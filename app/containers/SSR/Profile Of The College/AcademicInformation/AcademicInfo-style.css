@@ -1,0 +1,14 @@
+.main-container {
+  margin: 20px;
+  border-style: solid;
+  border-width: 2px;
+  border-color: #02334d;
+  border-radius: 10px;
+}
+.main-heading-style {
+  color: white;
+  background-color: #02334d;
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px;
+  padding: 10px;
+}

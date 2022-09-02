@@ -1,4 +1,4 @@
-const styles = theme => ({
+const styles = (theme) => ({
   dark: {},
   breadcrumbs: {
     position: 'relative',
@@ -15,16 +15,16 @@ const styles = theme => ({
       '& a': {
         color: theme.palette.common.white,
         textDecoration: 'none',
-        margin: '0 5px'
-      }
+        margin: '0 5px',
+      },
     },
     '&$dark': {
       color: theme.palette.text.secondary,
       '& a': {
-        color: theme.palette.text.primary
-      }
-    }
-  }
+        color: theme.palette.text.primary,
+      },
+    },
+  },
 });
 
 export default styles;

@@ -5,6 +5,9 @@ import './c31-style.css';
 function Criteria31() {
   // state variables
   const [value311t1, setValue311t1] = useState('');
+  const [value311f1, setValue311f1] = useState([]);
+  const [value311f2, setValue311f2] = useState([]);
+  const [value311f3, setValue311f3] = useState([]);
   const [value3121t1, setValue3121t1] = useState('');
   const [value3121t2, setValue3121t2] = useState('');
   const [value3121t3, setValue3121t3] = useState('');
@@ -15,6 +18,10 @@ function Criteria31() {
   const [value3121t8, setValue3121t8] = useState('');
   const [value3121t9, setValue3121t9] = useState('');
   const [value3121t10, setValue3121t10] = useState('');
+  const [value3121f1, setValue3121f1] = useState([]);
+  const [value3121f2, setValue3121f2] = useState([]);
+  const [value3121f3, setValue3121f3] = useState([]);
+  const [value3121f4, setValue3121f4] = useState([]);
   const [value3131t1, setValue3131t1] = useState('');
   const [value3131t2, setValue3131t2] = useState('');
   const [value3131t3, setValue3131t3] = useState('');
@@ -26,6 +33,9 @@ function Criteria31() {
   const [value3131t9, setValue3131t9] = useState('');
   const [value3131t10, setValue3131t10] = useState('');
   const [value3131t11, setValue3131t11] = useState('');
+  const [value3131f1, setValue3131f1] = useState([]);
+  const [value3131f2, setValue3131f2] = useState([]);
+  const [value3131f3, setValue3131f3] = useState([]);
   const [responseButtonStatus312, setResponseButtonStatus312] = useState(false);
   const [responseButtonStatus313, setResponseButtonStatus313] = useState(false);
   const [responseValue311, setResponseValue311] = useState('');
@@ -67,7 +77,6 @@ function Criteria31() {
           / 5
       );
     }
-    console.log(responseValue312);
   }
 
   function onClickingViewResponse313() {
@@ -112,6 +121,9 @@ function Criteria31() {
   }
 
   // sending data to db with API
+
+  const form311Data = new FormData();
+
   const inputDataList = {
     input311t1: value311t1,
     input3121t1: value3121t1,
@@ -134,18 +146,48 @@ function Criteria31() {
     input3131t8: value3131t8,
     input3131t9: value3131t9,
     input3131t10: value3131t10,
+    response311: responseValue311,
+    response312: responseValue312,
+    response313: responseValue313,
   };
 
-  const fetchMethod = {
-    method: 'POST',
-    headers: { Accept: 'application/json', 'Content-Type': 'application/json' },
-    body: JSON.stringify(inputDataList),
-  };
-  function onClickingSave() {
-    fetch('http://localhost:8080/api/v1/fieldinfo', fetchMethod).then(
+  function onClickingSaveSendingTexts() {
+    const textsFetchMethod = {
+      method: 'POST',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(inputDataList),
+    };
+    console.log('work');
+    fetch('http://localhost:8080/api/v1/fieldinfo', textsFetchMethod).then(
       (response) => {
         console.log(response);
       }
+    );
+  }
+
+  function onClickingSaveSendingFiles() {
+    console.log('work2');
+    form311Data.append('file311f1', value311f1);
+    form311Data.append('file311f2', value311f2);
+    form311Data.append('file311f3', value311f3);
+    form311Data.append('file3121f1', value3121f1);
+    form311Data.append('file3121f2', value3121f2);
+    form311Data.append('file3121f3', value3121f3);
+    form311Data.append('file3121f4', value3121f4);
+    form311Data.append('file3131f1', value3131f1);
+    form311Data.append('file3131f2', value3131f2);
+    form311Data.append('file3131f3', value3131f3);
+    console.log(form311Data);
+    const filesFetchMethod = {
+      method: 'POST',
+      headers: { 'Content-Type': 'multipart/form-data' },
+      body: form311Data,
+    };
+    fetch('http://localhost:8080/api/v1/fieldinfo', filesFetchMethod).then(
+      (response) => console.log(response)
     );
   }
 
@@ -194,7 +236,11 @@ function Criteria31() {
               <td>Any additional information</td>
               <td></td>
               <td>
-                <input type="file" />
+                <input
+                  onChange={(e) => setValue311f1(e.target.files[0])}
+                  id="311-f1"
+                  type="file"
+                />
               </td>
             </tr>
             <tr>
@@ -204,7 +250,11 @@ function Criteria31() {
               </td>
               <td></td>
               <td>
-                <input type="file" />
+                <input
+                  onChange={(e) => setValue311f2(e.target.files[0])}
+                  id="311-f2"
+                  type="file"
+                />
               </td>
             </tr>
             <tr>
@@ -214,7 +264,11 @@ function Criteria31() {
               </td>
               <td></td>
               <td>
-                <input type="file" />
+                <input
+                  onChange={(e) => setValue311f3(e.target.files[0])}
+                  id="311-f3"
+                  type="file"
+                />
               </td>
             </tr>
           </table>
@@ -344,14 +398,22 @@ function Criteria31() {
                 <td>Any additional information</td>
                 <td></td>
                 <td>
-                  <input type="file" />
+                  <input
+                    onChange={(e) => setValue3121f1(e.target.files[0])}
+                    id="3121-f1"
+                    type="file"
+                  />
                 </td>
               </tr>
               <tr>
                 <td>Minutes of the relevant bodies of the Institution</td>
                 <td></td>
                 <td>
-                  <input type="file" />
+                  <input
+                    onChange={(e) => setValue3121f2(e.target.files[0])}
+                    id="3121-f2"
+                    type="file"
+                  />
                 </td>
               </tr>
               <tr>
@@ -361,7 +423,11 @@ function Criteria31() {
                 </td>
                 <td></td>
                 <td>
-                  <input type="file" />
+                  <input
+                    onChange={(e) => setValue3121f3(e.target.files[0])}
+                    id="3121-f3"
+                    type="file"
+                  />
                 </td>
               </tr>
               <tr>
@@ -371,7 +437,11 @@ function Criteria31() {
                 </td>
                 <td></td>
                 <td>
-                  <input type="file" />
+                  <input
+                    onChange={(e) => setValue3121f4(e.target.files[0])}
+                    id="3121-f4"
+                    type="file"
+                  />
                 </td>
               </tr>
             </table>
@@ -526,14 +596,22 @@ function Criteria31() {
                 <td>Any additional information</td>
                 <td></td>
                 <td>
-                  <input type="file" />
+                  <input
+                    onChange={(e) => setValue3131f1(e.target.files[0])}
+                    id="3131-f1"
+                    type="file"
+                  />
                 </td>
               </tr>
               <tr>
                 <td>e-copies of the award letters of the teachers</td>
                 <td></td>
                 <td>
-                  <input type="file" />
+                  <input
+                    onChange={(e) => setValue3131f2(e.target.files[0])}
+                    id="3131-f2"
+                    type="file"
+                  />
                 </td>
               </tr>
               <tr>
@@ -543,7 +621,11 @@ function Criteria31() {
                 </td>
                 <td></td>
                 <td>
-                  <input type="file" />
+                  <input
+                    onChange={(e) => setValue3131f3(e.target.files[0])}
+                    id="3131-f3"
+                    type="file"
+                  />
                 </td>
               </tr>
             </table>
@@ -562,7 +644,13 @@ function Criteria31() {
         </div>
       </div>
       <div className="c31x-button-container">
-        <button onClick={onClickingSave} className="c31x-button-style">
+        <button
+          onClick={() => {
+            onClickingSaveSendingTexts();
+            onClickingSaveSendingFiles();
+          }}
+          className="c31x-button-style"
+        >
           Save
         </button>
       </div>

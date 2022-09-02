@@ -1,5 +1,5 @@
 import { lighten } from '@material-ui/core/styles';
-const styles = theme => ({
+const styles = (theme) => ({
   root: {
     paddingTop: theme.spacing(3),
     paddingBottom: theme.spacing(3),
@@ -13,7 +13,7 @@ const styles = theme => ({
       paddingRight: theme.spacing(3),
     },
     '&$noMargin': {
-      margin: 0
+      margin: 0,
     },
   },
   descBlock: {
@@ -22,29 +22,32 @@ const styles = theme => ({
     marginBottom: theme.spacing(5),
     [theme.breakpoints.down('sm')]: {
       marginBottom: theme.spacing(3),
-    }
+    },
   },
   titleText: {
-    flex: 1
+    flex: 1,
   },
   title: {
     position: 'relative',
     textTransform: 'capitalize',
     fontSize: 24,
     fontWeight: 400,
-    color: theme.palette.type === 'dark' ? theme.palette.primary.main : theme.palette.primary.dark,
+    color:
+      theme.palette.type === 'dark'
+        ? theme.palette.primary.main
+        : theme.palette.primary.dark,
     [theme.breakpoints.down('xs')]: {
       textAlign: 'center',
       fontWeight: 600,
-      marginBottom: theme.spacing(1)
-    }
+      marginBottom: theme.spacing(1),
+    },
   },
   description: {
     maxWidth: 960,
     paddingTop: theme.spacing(0.5),
     [theme.breakpoints.down('xs')]: {
-      textAlign: 'center'
-    }
+      textAlign: 'center',
+    },
   },
   content: {
     marginTop: theme.spacing(2),
@@ -52,8 +55,8 @@ const styles = theme => ({
     borderRadius: theme.rounded.medium,
     backgroundColor: theme.palette.background.default,
     [theme.breakpoints.up('lg')]: {
-      padding: theme.spacing(2)
-    }
+      padding: theme.spacing(2),
+    },
   },
   whiteBg: {
     backgroundColor: 'transparent',
@@ -62,16 +65,19 @@ const styles = theme => ({
   },
   noMargin: {},
   colorMode: {
-    backgroundColor: theme.palette.type === 'dark' ? theme.palette.primary.dark : theme.palette.primary.main,
+    backgroundColor:
+      theme.palette.type === 'dark'
+        ? theme.palette.primary.dark
+        : theme.palette.primary.main,
     '& $title': {
       color: theme.palette.grey[100],
       '&:after': {
-        borderBottom: `5px solid ${theme.palette.primary.light}`
-      }
+        borderBottom: `5px solid ${theme.palette.primary.light}`,
+      },
     },
     '& $description': {
       color: theme.palette.grey[100],
-    }
+    },
   },
   overflowX: {
     width: '100%',
@@ -79,9 +85,15 @@ const styles = theme => ({
   },
   iconTitle: {
     borderRadius: theme.rounded.small,
-    border: theme.palette.type === 'dark' ? 'none' : `1px solid ${lighten(theme.palette.primary.dark, 0.9)}`,
+    border:
+      theme.palette.type === 'dark'
+        ? 'none'
+        : `1px solid ${lighten(theme.palette.primary.dark, 0.9)}`,
     boxShadow: `0 2px 15px -5px ${theme.palette.primary.main}`,
-    background: theme.palette.type === 'dark' ? theme.palette.primary.main : lighten(theme.palette.primary.light, 0.5),
+    background:
+      theme.palette.type === 'dark'
+        ? theme.palette.primary.main
+        : lighten(theme.palette.primary.light, 0.5),
     width: 48,
     height: 48,
     textAlign: 'center',
@@ -89,14 +101,17 @@ const styles = theme => ({
     verticalAlign: 'middle',
     marginRight: theme.spacing(3),
     [theme.breakpoints.down('xs')]: {
-      display: 'none'
+      display: 'none',
     },
     '& i': {
       fontSize: 28,
       verticalAlign: 'baseline',
-      color: theme.palette.type === 'dark' ? theme.palette.common.white : theme.palette.primary.main
-    }
-  }
+      color:
+        theme.palette.type === 'dark'
+          ? theme.palette.common.white
+          : theme.palette.primary.main,
+    },
+  },
 });
 
 export default styles;

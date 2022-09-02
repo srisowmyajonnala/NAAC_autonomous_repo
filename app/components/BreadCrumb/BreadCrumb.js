@@ -7,13 +7,15 @@ import styles from './breadCrumb-jss';
 
 const Breadcrumbs = (props) => {
   const {
-    classes,
-    theme,
-    separator,
-    location
+    classes, theme, separator, location
   } = props;
   return (
-    <section className={classNames(theme === 'dark' ? classes.dark : classes.light, classes.breadcrumbs)}>
+    <section
+      className={classNames(
+        theme === 'dark' ? classes.dark : classes.light,
+        classes.breadcrumbs
+      )}
+    >
       <Route
         path="*"
         render={() => {
@@ -24,17 +26,15 @@ const Breadcrumbs = (props) => {
             <p>
               You are here:
               <span>
-                {
-                  parts.map((part, partIndex) => {
-                    const path = ['', ...parts.slice(0, partIndex + 1)].join('/');
-                    return (
-                      <Fragment key={path}>
-                        <Link to={path}>{part}</Link>
-                        { separator }
-                      </Fragment>
-                    );
-                  })
-                }
+                {parts.map((part, partIndex) => {
+                  const path = ['', ...parts.slice(0, partIndex + 1)].join('/');
+                  return (
+                    <Fragment key={path}>
+                      <Link to={path}>{part}</Link>
+                      {separator}
+                    </Fragment>
+                  );
+                })}
                 &nbsp;
                 {place}
               </span>

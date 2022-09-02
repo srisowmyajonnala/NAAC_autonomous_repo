@@ -10,6 +10,12 @@ export const BlankPage = loadable(() => import("./Pages/BlankPage"), {
 export const DashboardPage = loadable(() => import("./Pages/Dashboard"), {
   fallback: <Loading />,
 });
+export const ProfileOfTheCollege = loadable(
+  () => import("./SSR/Profile Of The College/ProfileOfTheCollege"),
+  {
+    fallback: <Loading />,
+  }
+);
 export const Criteria1 = loadable(() => import("./QIF/Criteria-1/c1"), {
   fallback: <Loading />,
 });
