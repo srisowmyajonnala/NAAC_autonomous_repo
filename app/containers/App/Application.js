@@ -1,8 +1,8 @@
-import React, { useContext } from "react";
-import { PropTypes } from "prop-types";
-import { Switch, Route } from "react-router-dom";
-import Dashboard from "../Templates/Dashboard";
-import { ThemeContext } from "./ThemeWrapper";
+import React, { useContext } from 'react';
+import { PropTypes } from 'prop-types';
+import { Switch, Route } from 'react-router-dom';
+import Dashboard from '../Templates/Dashboard';
+import { ThemeContext } from './ThemeWrapper';
 import {
   Parent,
   DashboardPage,
@@ -13,9 +13,12 @@ import {
   Criteria4,
   Criteria5,
   Criteria6,
+  Student1,
+  Student2,
+  Student3,
   Error,
   NotFound,
-} from "../pageListAsync";
+} from '../pageListAsync';
 
 function Application(props) {
   const { history } = props;
@@ -32,6 +35,9 @@ function Application(props) {
         <Route path="/app/QIF/Criteria-4" component={Criteria4} />
         <Route path="/app/QIF/Criteria-5" component={Criteria5} />
         <Route path="/app/QIF/Criteria-6" component={Criteria6} />
+        <Route path="/app/student/student1" component={Student1} />
+        <Route path="/app/student/student2" component={Student2} />
+        <Route path="/app/student/student3" component={Student3} />
         <Route path="/app/pages/not-found" component={NotFound} />
         <Route path="/app/pages/error" component={Error} />
         <Route exact path="/app/pages" component={Parent} />

@@ -28,6 +28,15 @@ export const Criteria5 = loadable(() => import("./QIF/Criteria-5/c5"), {
 export const Criteria6 = loadable(() => import("./QIF/Criteria-6/c6"), {
   fallback: <Loading />,
 });
+export const Student1 = loadable(() => import("./Student/Student1/S1"), {
+  fallback: <Loading />,
+});
+export const Student2 = loadable(() => import("./Student/Student2/S2"), {
+  fallback: <Loading />,
+});
+export const Student3 = loadable(() => import("./Student/Student3/S3"), {
+  fallback: <Loading />,
+});
 export const Login = loadable(() => import("./Pages/Users/Login"), {
   fallback: <Loading />,
 });
